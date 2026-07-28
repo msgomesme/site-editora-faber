@@ -1,41 +1,98 @@
 import { SubpageShell } from "../components/SiteChrome";
 
+type CatalogBook = {
+  title: string;
+  theme: string;
+  coverImage?: string;
+};
+
 const mundoNeurodiverso = [
-  ["O Menino que Via o Mundo Diferente", "TEA"],
-  ["A Menina dos Mil Pensamentos", "TDAH"],
-  ["O Menino que Lia de Outro Jeito", "Dislexia"],
-  ["O Menino do Coração Valente", "TOD"],
-  ["A Menina que Carregava Nuvens", "Ansiedade"],
-  ["O Menino dos Pequenos Rituais", "TOC"],
-  ["A Menina do Sorriso que Abraçava o Mundo", "Síndrome de Down"],
-  ["A Menina das Ideias Brilhantes", "Altas Habilidades"],
-];
+  {
+    title: "O Menino que Via o Mundo Diferente",
+    theme: "TEA",
+    coverImage: "/mockups/o-menino-que-via-o-mundo-diferente.png",
+  },
+  {
+    title: "A Menina dos Mil Pensamentos",
+    theme: "TDAH",
+    coverImage: "/mockups/a-menina-dos-mil-pensamentos.png",
+  },
+  {
+    title: "O Menino que Lia de Outro Jeito",
+    theme: "Dislexia",
+    coverImage: "/mockups/o-menino-que-lia-de-outro-jeito.png",
+  },
+  {
+    title: "O Menino do Coração Valente",
+    theme: "TOD",
+    coverImage: "/mockups/o-menino-do-coracao-valente.png",
+  },
+  {
+    title: "A Menina que Carregava Nuvens",
+    theme: "Ansiedade",
+    coverImage: "/mockups/a-menina-que-carregava-nuvens.png",
+  },
+  {
+    title: "O Menino dos Pequenos Rituais",
+    theme: "TOC",
+    coverImage: "/mockups/o-menino-dos-pequenos-rituais.png",
+  },
+  {
+    title: "A Menina do Sorriso que Abraçava o Mundo",
+    theme: "Síndrome de Down",
+    coverImage: "/mockups/a-menina-do-sorriso-que-abracava-o-mundo.png",
+  },
+  {
+    title: "A Menina das Ideias Brilhantes",
+    theme: "Altas Habilidades",
+    coverImage: "/mockups/a-menina-das-ideias-brilhantes.png",
+  },
+] satisfies CatalogBook[];
 
 const janelasParaOMundo = [
-  ["A Menina que Enxergava com as Mãos", "Deficiência Visual"],
-  ["O Menino que Ouvia com os Olhos", "Surdez"],
-  ["O Menino das Rodas que Levavam Sonhos", "Deficiência Física"],
-  ["A Menina das Mãos Corajosas", "Amputação"],
-  ["O Menino que Pintava Sonhos", "Paralisia Cerebral"],
-];
+  { title: "A Menina que Enxergava com as Mãos", theme: "Deficiência Visual" },
+  { title: "O Menino que Ouvia com os Olhos", theme: "Surdez" },
+  {
+    title: "O Menino das Rodas que Levavam Sonhos",
+    theme: "Deficiência Física",
+  },
+  { title: "A Menina das Mãos Corajosas", theme: "Amputação" },
+  { title: "O Menino que Pintava Sonhos", theme: "Paralisia Cerebral" },
+] satisfies CatalogBook[];
 
 function CollectionGrid({
   books,
   startAt = 0,
 }: {
-  books: string[][];
+  books: CatalogBook[];
   startAt?: number;
 }) {
   return (
     <div className="collection-grid">
-      {books.map(([title, theme], index) => (
-        <article key={title}>
+      {books.map((book, index) => (
+        <article
+          className={book.coverImage ? "collection-card-has-mockup" : undefined}
+          key={book.title}
+        >
           <span>{String(startAt + index + 1).padStart(2, "0")}</span>
-          <h3>{title}</h3>
-          <p>{theme}</p>
+          <div
+            className={`collection-cover${book.coverImage ? " has-mockup" : ""}`}
+          >
+            {book.coverImage ? (
+              <img
+                src={book.coverImage}
+                alt={`Mockup da capa do livro ${book.title}`}
+                loading="lazy"
+              />
+            ) : (
+              <strong>{book.theme}</strong>
+            )}
+          </div>
+          <h3>{book.title}</h3>
+          <p>{book.theme}</p>
           <a
             className="catalog-buy"
-            href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${title}`)}`}
+            href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
           >
             Comprar
           </a>

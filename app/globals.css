@@ -2898,3 +2898,93 @@ button,
     min-height: 180px;
   }
 }
+
+/* Mockups oficiais dos livros */
+.book-cover {
+  aspect-ratio: 0.86;
+}
+
+.book-cover-mockup {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.book-card:hover .book-cover-mockup {
+  box-shadow: none;
+}
+
+.book-cover-mockup img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.collection-grid article {
+  min-height: 590px;
+  overflow: hidden;
+  padding: 18px 22px 26px;
+  position: relative;
+}
+
+.collection-grid article > span {
+  align-items: center;
+  background: var(--night);
+  border-radius: 999px;
+  color: var(--white);
+  display: flex;
+  font-size: 0.68rem;
+  font-weight: 800;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 40px;
+  z-index: 2;
+}
+
+.collection-cover {
+  align-items: center;
+  aspect-ratio: 0.88;
+  background: var(--sage);
+  display: flex;
+  justify-content: center;
+  margin: -18px -22px 24px;
+  overflow: hidden;
+}
+
+.collection-cover.has-mockup {
+  background: transparent;
+}
+
+.collection-grid article.collection-card-has-mockup {
+  background: transparent;
+}
+
+.collection-cover img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.collection-cover strong {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  max-width: 70%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.collection-grid h3 {
+  margin: 0 0 10px;
+}
+
+@media (max-width: 760px) {
+  .collection-grid article {
+    min-height: 560px;
+  }
+}

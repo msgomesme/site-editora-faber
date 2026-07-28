@@ -5,6 +5,7 @@ type Book = {
   theme: string;
   collection: string;
   tone: "pink" | "blue" | "sage" | "yellow";
+  coverImage?: string;
 };
 
 const books: Book[] = [
@@ -13,48 +14,56 @@ const books: Book[] = [
     theme: "TEA",
     collection: "Mundo Neurodiverso",
     tone: "blue",
+    coverImage: "/mockups/o-menino-que-via-o-mundo-diferente.png",
   },
   {
     title: "A Menina dos Mil Pensamentos",
     theme: "TDAH",
     collection: "Mundo Neurodiverso",
     tone: "pink",
+    coverImage: "/mockups/a-menina-dos-mil-pensamentos.png",
   },
   {
     title: "O Menino que Lia de Outro Jeito",
     theme: "Dislexia",
     collection: "Mundo Neurodiverso",
     tone: "sage",
+    coverImage: "/mockups/o-menino-que-lia-de-outro-jeito.png",
   },
   {
     title: "O Menino do Coração Valente",
     theme: "TOD",
     collection: "Mundo Neurodiverso",
     tone: "yellow",
+    coverImage: "/mockups/o-menino-do-coracao-valente.png",
   },
   {
     title: "A Menina que Carregava Nuvens",
     theme: "Ansiedade",
     collection: "Mundo Neurodiverso",
     tone: "pink",
+    coverImage: "/mockups/a-menina-que-carregava-nuvens.png",
   },
   {
     title: "O Menino dos Pequenos Rituais",
     theme: "TOC",
     collection: "Mundo Neurodiverso",
     tone: "blue",
+    coverImage: "/mockups/o-menino-dos-pequenos-rituais.png",
   },
   {
     title: "A Menina do Sorriso que Abraçava o Mundo",
     theme: "Síndrome de Down",
     collection: "Mundo Neurodiverso",
     tone: "sage",
+    coverImage: "/mockups/a-menina-do-sorriso-que-abracava-o-mundo.png",
   },
   {
     title: "A Menina das Ideias Brilhantes",
     theme: "Altas Habilidades",
     collection: "Mundo Neurodiverso",
     tone: "yellow",
+    coverImage: "/mockups/a-menina-das-ideias-brilhantes.png",
   },
   {
     title: "A Menina que Enxergava com as Mãos",
@@ -175,13 +184,24 @@ function CatalogBookCard({
       className="book-card"
       aria-hidden={decorative ? "true" : undefined}
     >
-      <div className={`book-cover cover-${book.tone}`}>
-        <span>{book.collection}</span>
-        <strong>{book.title}</strong>
-        <i aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>
+      <div
+        className={`book-cover cover-${book.tone}${book.coverImage ? " book-cover-mockup" : ""}`}
+      >
+        {book.coverImage ? (
+          <img
+            src={book.coverImage}
+            alt={`Mockup da capa do livro ${book.title}`}
+            loading="lazy"
+          />
+        ) : (
+          <>
+            <span>{book.collection}</span>
+            <strong>{book.title}</strong>
+            <i aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>
+          </>
+        )}
       </div>
       <div className="book-info">
-        <p>{book.collection}</p>
         <h3>{book.title}</h3>
         <span>{book.theme}</span>
         <a
