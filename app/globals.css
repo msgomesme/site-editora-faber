@@ -1428,6 +1428,22 @@ footer {
   background: var(--pink);
 }
 
+.collection-intro .split-panels {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.collection-intro .split-panels > article {
+  padding: clamp(30px, 3.5vw, 58px);
+}
+
+.collection-intro .split-panels > article:nth-child(3) {
+  background: var(--light);
+}
+
+.collection-intro .split-panels h3 {
+  font-size: clamp(2rem, 3.25vw, 3.8rem);
+}
+
 .split-panels h2,
 .split-panels h3 {
   font-size: clamp(2rem, 4vw, 4.5rem);
@@ -1714,6 +1730,10 @@ footer {
 
   .author-flow-section ol {
     grid-template-columns: repeat(4, minmax(140px, 1fr));
+  }
+
+  .collection-intro .split-panels {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2812,6 +2832,17 @@ button,
 .impact-home h2 {
   margin-inline: auto;
   max-width: 1280px;
+}
+
+.impact-home-detailed h2 {
+  font-size: clamp(2rem, 3.2vw, 3.8rem);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.impact-home-detailed > p:last-child {
+  line-height: 1.65;
+  max-width: 980px;
 }
 
 .impact-home > p:last-child {

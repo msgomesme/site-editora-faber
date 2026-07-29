@@ -295,7 +295,8 @@ export default function Home() {
         </div>
         <div className="home-who-copy">
           <p>
-            A ROEL Editora é uma editora completa. Atuamos em todos os
+            A ROEL Editora é uma editora completa, fundada pelos presidentes do
+            IRA INTEGRA TEA, Roberto Araújo e Elton Henrique. Atuamos em todos os
             segmentos: ficção e não ficção, literatura infantojuvenil, obras
             paradidáticas, biografias e memórias, livros técnicos e científicos,
             autoajuda e desenvolvimento pessoal. Também oferecemos serviços
@@ -314,7 +315,7 @@ export default function Home() {
             <h2 id="catalog-title">Catálogo em Destaque</h2>
           </div>
           <p>
-            Duas coleções paradidáticas que abrem caminho para um catálogo em
+            Três coleções paradidáticas que abrem caminho para um catálogo em
             expansão.
           </p>
         </div>

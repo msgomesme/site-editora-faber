@@ -106,12 +106,12 @@ export default function CatalogoPage() {
   return (
     <SubpageShell
       eyebrow="Catálogo de Livros"
-      title="Duas coleções paradidáticas. Um catálogo em expansão."
+      title="Um catálogo em expansão."
       intro="Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas."
     >
       <section className="content-section collection-intro">
         <p className="eyebrow eyebrow-dark">Nossas Coleções</p>
-        <h2>Duas coleções paradidáticas que abrem caminho para um catálogo em expansão.</h2>
+        <h2>Três coleções paradidáticas que abrem caminho para um catálogo em expansão.</h2>
         <div className="split-panels">
           <article>
             <h3>Coleção Mundo Neurodiverso</h3>
@@ -133,6 +133,17 @@ export default function CatalogoPage() {
             <p>
               Cinco histórias. Cinco protagonistas. Uma missão: mostrar que
               nenhuma deficiência é maior que o potencial de uma criança.
+            </p>
+          </article>
+          <article>
+            <h3>Coleção Protagonistas</h3>
+            <p>
+              Uma coleção dedicada a trajetórias, talentos e conquistas que
+              merecem ser conhecidos.
+            </p>
+            <p>
+              Histórias de protagonismo que preservam legados, valorizam
+              exemplos e inspiram crianças e jovens a transformar o mundo.
             </p>
           </article>
         </div>
