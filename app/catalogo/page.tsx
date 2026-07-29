@@ -1,64 +1,9 @@
 import { SubpageShell } from "../components/SiteChrome";
-
-type CatalogBook = {
-  title: string;
-  theme: string;
-  coverImage?: string;
-};
-
-const mundoNeurodiverso = [
-  {
-    title: "O Menino que Via o Mundo Diferente",
-    theme: "TEA",
-    coverImage: "/mockups/o-menino-que-via-o-mundo-diferente.png",
-  },
-  {
-    title: "A Menina dos Mil Pensamentos",
-    theme: "TDAH",
-    coverImage: "/mockups/a-menina-dos-mil-pensamentos.png",
-  },
-  {
-    title: "O Menino que Lia de Outro Jeito",
-    theme: "Dislexia",
-    coverImage: "/mockups/o-menino-que-lia-de-outro-jeito.png",
-  },
-  {
-    title: "O Menino do Coração Valente",
-    theme: "TOD",
-    coverImage: "/mockups/o-menino-do-coracao-valente.png",
-  },
-  {
-    title: "A Menina que Carregava Nuvens",
-    theme: "Ansiedade",
-    coverImage: "/mockups/a-menina-que-carregava-nuvens.png",
-  },
-  {
-    title: "O Menino dos Pequenos Rituais",
-    theme: "TOC",
-    coverImage: "/mockups/o-menino-dos-pequenos-rituais.png",
-  },
-  {
-    title: "A Menina do Sorriso que Abraçava o Mundo",
-    theme: "Síndrome de Down",
-    coverImage: "/mockups/a-menina-do-sorriso-que-abracava-o-mundo.png",
-  },
-  {
-    title: "A Menina das Ideias Brilhantes",
-    theme: "Altas Habilidades",
-    coverImage: "/mockups/a-menina-das-ideias-brilhantes.png",
-  },
-] satisfies CatalogBook[];
-
-const janelasParaOMundo = [
-  { title: "A Menina que Enxergava com as Mãos", theme: "Deficiência Visual" },
-  { title: "O Menino que Ouvia com os Olhos", theme: "Surdez" },
-  {
-    title: "O Menino das Rodas que Levavam Sonhos",
-    theme: "Deficiência Física",
-  },
-  { title: "A Menina das Mãos Corajosas", theme: "Amputação" },
-  { title: "O Menino que Pintava Sonhos", theme: "Paralisia Cerebral" },
-] satisfies CatalogBook[];
+import {
+  janelasParaOMundo,
+  mundoNeurodiverso,
+  type CatalogBook,
+} from "./books";
 
 function CollectionGrid({
   books,
@@ -90,12 +35,17 @@ function CollectionGrid({
           </div>
           <h3>{book.title}</h3>
           <p>{book.theme}</p>
-          <a
-            className="catalog-buy"
-            href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
-          >
-            Comprar
-          </a>
+          <div className="catalog-card-actions">
+            <a className="catalog-details" href={`/catalogo/${book.slug}`}>
+              Ver sinopse →
+            </a>
+            <a
+              className="catalog-buy"
+              href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+            >
+              Comprar
+            </a>
+          </div>
         </article>
       ))}
     </div>

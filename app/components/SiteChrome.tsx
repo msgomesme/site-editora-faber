@@ -52,8 +52,8 @@ export function SiteFooter() {
         </a>
         <div>
           <h2>
-            Não estamos construindo apenas uma editora. Estamos construindo um
-            universo literário onde toda história encontra seu lugar.
+            Não publicamos apenas livros. Entregamos um universo literário onde
+            toda história encontra seu lugar.
           </h2>
         </div>
         <a className="whatsapp" href="mailto:contato@roeleditora.com.br">
@@ -67,7 +67,9 @@ export function SiteFooter() {
           <a href="/catalogo">Catálogo</a>
           <a href="/servicos">Serviços</a>
           <a href="/contato">Contato</a>
+          <a href="/compliance">Compliance</a>
           <a href="/privacidade">Privacidade</a>
+          <a href="/faq">FAQ</a>
         </nav>
       </div>
     </footer>

@@ -1,19 +1,48 @@
 # Handoff — Site Editora ROEL
 
-Última atualização: 28 de julho de 2026, às 23h.
+Última atualização: 29 de julho de 2026, às 13h.
+
+## Atualização de 29 de julho de 2026
+
+O projeto foi preparado para a próxima etapa de publicação e apresentação aos
+diretores. Além das páginas institucionais anteriores, foram concluídos:
+
+- páginas `/compliance`, `/privacidade` e `/faq` para transparência e
+  governança;
+- Código de Conduta completo, Carta dos Presidentes e Canal de Integridade;
+- formulário de integridade com campos de relato, categoria, anexos e protocolo;
+- Política de Privacidade completa com índice, tabelas, LGPD, cookies e direitos
+  do titular;
+- FAQ com 12 perguntas em formato expansível;
+- estrutura compartilhada de dados dos livros em `app/catalogo/books.ts`;
+- páginas dinâmicas de livro em `/catalogo/[slug]`;
+- oito sinopses da Coleção Mundo Neurodiverso cadastradas;
+- páginas de detalhe preparadas para os cinco livros de Janelas para o Mundo,
+  aguardando suas sinopses;
+- Home reduzida para uma seleção de seis livros, com apenas a ação
+  “Conhecer livro →”;
+- temas como TOD, Ansiedade e TOC removidos dos cards da Home para deixar a
+  vitrine mais limpa; essas informações permanecem no Catálogo e nos detalhes;
+- exportador cPanel atualizado para incluir as páginas de compliance, FAQ e
+  todas as páginas dinâmicas dos livros;
+- última compilação validada com `npm run build` sem erros.
 
 ## 1. Estado atual
 
-O site institucional da Editora ROEL está funcional, responsivo e com oito
-rotas. A última compilação com `npm run build` foi concluída sem erros.
+O site institucional da Editora ROEL está funcional, responsivo e com páginas
+institucionais, catálogo dinâmico e conteúdo editorial. A última compilação com
+`npm run build` foi concluída sem erros.
 
 O projeto contém:
 
 - Home institucional completa;
 - catálogo com carrossel automático;
 - página de catálogo com as três coleções;
-- páginas institucionais, serviços, parceiros, blog, contato e privacidade;
+- páginas institucionais, serviços, parceiros, blog, contato, compliance,
+  privacidade e FAQ;
 - mockups reais dos oito livros da coleção Mundo Neurodiverso;
+- sinopses dos oito livros da Coleção Mundo Neurodiverso em páginas individuais;
+- páginas individuais preparadas para todos os livros já cadastrados;
 - exportador estático para hospedagem via cPanel na subpasta `/editora/`;
 - versão local acessível normalmente por `http://localhost:3000`.
 
@@ -57,11 +86,14 @@ npm run lint
 | `/` | `app/page.tsx` | Home, hero, apresentação, catálogo, serviços, impacto e newsletter |
 | `/quem-somos` | `app/quem-somos/page.tsx` | História e posicionamento institucional |
 | `/catalogo` | `app/catalogo/page.tsx` | Coleções e todos os livros |
+| `/catalogo/[slug]` | `app/catalogo/[slug]/page.tsx` | Sinopse e detalhes de cada livro |
 | `/servicos` | `app/servicos/page.tsx` | Serviços editoriais e gráficos |
 | `/parceiros` | `app/parceiros/page.tsx` | Educadores, autores e parcerias |
 | `/blog` | `app/blog/page.tsx` | Categorias editoriais |
 | `/contato` | `app/contato/page.tsx` | Formulário e FAQ |
-| `/privacidade` | `app/privacidade/page.tsx` | LGPD e CNAEs |
+| `/compliance` | `app/compliance/page.tsx` | Código de Conduta e Canal de Integridade |
+| `/privacidade` | `app/privacidade/page.tsx` | Política de Privacidade e LGPD |
+| `/faq` | `app/faq/page.tsx` | Perguntas frequentes de privacidade |
 
 ## 4. Direção visual aprovada
 
@@ -129,7 +161,21 @@ Logo principal:
 - `public/logo-roel-transparent-cropped.png`;
 - versão SVG preservada em `public/logo-roel.svg`.
 
-## 6. Mockups dos livros
+## 6. Catálogo, sinopses e mockups
+
+Os dados dos livros ficam centralizados em `app/catalogo/books.ts`. Cada livro
+possui slug, título, tema, coleção, tom visual, mockup opcional e sinopse em
+parágrafos. Para adicionar um novo livro:
+
+1. incluir o objeto no arquivo de dados;
+2. criar ou informar o mockup em `public/mockups/`;
+3. preencher `synopsis` quando o texto estiver disponível;
+4. confirmar que o exportador cPanel inclui o slug, caso a lista de rotas
+   deixe de ser estática.
+
+As páginas individuais usam a rota dinâmica `/catalogo/[slug]`. Livros sem
+sinopse exibem uma mensagem de conteúdo em desenvolvimento, sem inventar
+informações.
 
 Arquivos utilizados pelo site:
 
@@ -204,9 +250,17 @@ Os formulários são estáticos: abrem o cliente de e-mail do visitante e enviam
 para `contato@roeleditora.com.br`. Não existe backend PHP ou armazenamento de
 leads no cPanel.
 
-O arquivo `Editora-ROEL-cPanel-com-coracao-valente.zip` é o ZIP mais recente
-preservado na raiz, mas foi gerado antes das alterações de conteúdo de 28 de
-julho. Regenerar o pacote antes do próximo envio ao domínio.
+O arquivo `Editora-ROEL-cPanel-com-coracao-valente.zip` é um pacote antigo,
+preservado apenas como referência. Sempre regenerar um pacote novo antes do
+envio ao domínio, pois o exportador agora inclui compliance, FAQ, privacidade
+atualizada e as páginas individuais dos livros.
+
+Pacote atualizado gerado em 29 de julho de 2026:
+
+`Editora-ROEL-cPanel-latest.zip`
+
+Ele contém as páginas principais, 13 páginas individuais de livros, CSS,
+mockups, fontes, `.htaccess` e as instruções em `LEIA-ME.txt`.
 
 ## 9. Sites/Cloudflare
 
@@ -225,7 +279,20 @@ Ao trabalhar neste projeto pelo Codex, seguir o fluxo de Sites porque existe
 `.openai/hosting.json`. Não publicar nem ampliar acesso sem autorização clara do
 usuário.
 
-## 10. Pontos que ainda podem evoluir
+## 10. Publicação para apresentação aos diretores
+
+O código local e o pacote cPanel são caminhos diferentes:
+
+- para o domínio próprio, usar o ZIP gerado por `scripts/export-cpanel.mjs` e
+  extrair diretamente em `public_html/editora` (ou na pasta correspondente ao
+  domínio configurado);
+- para o Sites/Cloudflare, é necessário salvar uma versão do código e publicar
+  pelo projeto já existente em `.openai/hosting.json`;
+- o domínio próprio não pode ser conectado automaticamente sem o hostname e os
+  acessos/DNS do provedor. Não compartilhar credenciais no chat; basta fornecer
+  o hostname e seguir os registros DNS apresentados pelo provedor.
+
+## 11. Pontos que ainda podem evoluir
 
 - obter e adicionar os cinco mockups da coleção Janelas para o Mundo;
 - receber títulos, temas e mockups da Coleção Protagonistas;
@@ -236,7 +303,7 @@ usuário.
 - republicar a versão mais recente no Sites, caso autorizado;
 - configurar domínio definitivo diretamente na hospedagem desejada.
 
-## 11. Preferências do usuário
+## 12. Preferências do usuário
 
 - comunicação em português;
 - ajustes visuais iterativos, sempre com prévia local;
@@ -247,12 +314,13 @@ usuário.
   relevantes;
 - não alterar textos oficiais sem solicitação.
 
-## 12. Checklist para continuação
+## 13. Checklist para continuação
 
 1. Ler este arquivo e verificar `git status`.
 2. Rodar `npm install` apenas se as dependências não estiverem presentes.
 3. Iniciar com `npm run dev`.
-4. Conferir Home e `/catalogo`.
+4. Conferir Home, `/catalogo`, uma página de livro, `/compliance`,
+   `/privacidade` e `/faq`.
 5. Após mudanças, executar `npm run build`.
 6. Se a mudança precisar ir ao domínio, regenerar o pacote cPanel com
    `scripts/export-cpanel.mjs`.

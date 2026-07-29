@@ -1,101 +1,9 @@
 "use client";
 
-type Book = {
-  title: string;
-  theme: string;
-  collection: string;
-  tone: "pink" | "blue" | "sage" | "yellow";
-  coverImage?: string;
-};
+import { books } from "./catalogo/books";
+import type { CatalogBook as Book } from "./catalogo/books";
 
-const books: Book[] = [
-  {
-    title: "O Menino que Via o Mundo Diferente",
-    theme: "TEA",
-    collection: "Mundo Neurodiverso",
-    tone: "blue",
-    coverImage: "/mockups/o-menino-que-via-o-mundo-diferente.png",
-  },
-  {
-    title: "A Menina dos Mil Pensamentos",
-    theme: "TDAH",
-    collection: "Mundo Neurodiverso",
-    tone: "pink",
-    coverImage: "/mockups/a-menina-dos-mil-pensamentos.png",
-  },
-  {
-    title: "O Menino que Lia de Outro Jeito",
-    theme: "Dislexia",
-    collection: "Mundo Neurodiverso",
-    tone: "sage",
-    coverImage: "/mockups/o-menino-que-lia-de-outro-jeito.png",
-  },
-  {
-    title: "O Menino do Coração Valente",
-    theme: "TOD",
-    collection: "Mundo Neurodiverso",
-    tone: "yellow",
-    coverImage: "/mockups/o-menino-do-coracao-valente.png",
-  },
-  {
-    title: "A Menina que Carregava Nuvens",
-    theme: "Ansiedade",
-    collection: "Mundo Neurodiverso",
-    tone: "pink",
-    coverImage: "/mockups/a-menina-que-carregava-nuvens.png",
-  },
-  {
-    title: "O Menino dos Pequenos Rituais",
-    theme: "TOC",
-    collection: "Mundo Neurodiverso",
-    tone: "blue",
-    coverImage: "/mockups/o-menino-dos-pequenos-rituais.png",
-  },
-  {
-    title: "A Menina do Sorriso que Abraçava o Mundo",
-    theme: "Síndrome de Down",
-    collection: "Mundo Neurodiverso",
-    tone: "sage",
-    coverImage: "/mockups/a-menina-do-sorriso-que-abracava-o-mundo.png",
-  },
-  {
-    title: "A Menina das Ideias Brilhantes",
-    theme: "Altas Habilidades",
-    collection: "Mundo Neurodiverso",
-    tone: "yellow",
-    coverImage: "/mockups/a-menina-das-ideias-brilhantes.png",
-  },
-  {
-    title: "A Menina que Enxergava com as Mãos",
-    theme: "Deficiência Visual",
-    collection: "Janelas para o Mundo",
-    tone: "pink",
-  },
-  {
-    title: "O Menino que Ouvia com os Olhos",
-    theme: "Surdez",
-    collection: "Janelas para o Mundo",
-    tone: "blue",
-  },
-  {
-    title: "O Menino das Rodas que Levavam Sonhos",
-    theme: "Deficiência Física",
-    collection: "Janelas para o Mundo",
-    tone: "sage",
-  },
-  {
-    title: "A Menina das Mãos Corajosas",
-    theme: "Amputação",
-    collection: "Janelas para o Mundo",
-    tone: "yellow",
-  },
-  {
-    title: "O Menino que Pintava Sonhos",
-    theme: "Paralisia Cerebral",
-    collection: "Janelas para o Mundo",
-    tone: "pink",
-  },
-];
+const featuredBooks = books.slice(0, 6);
 
 const services = [
   {
@@ -127,6 +35,15 @@ const blogCategories = [
   "Lançamentos",
   "Impacto Social",
   "Bastidores",
+];
+
+const blogCategorySlugs = [
+  "neurodiversidade",
+  "educacao-inclusiva",
+  "dicas-familias",
+  "lancamentos",
+  "impacto-social",
+  "bastidores",
 ];
 
 const letterFieldLines = Array.from({ length: 24 }, (_, index) => {
@@ -203,13 +120,12 @@ function CatalogBookCard({
       </div>
       <div className="book-info">
         <h3>{book.title}</h3>
-        <span>{book.theme}</span>
         <a
-          className="catalog-buy"
-          href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+          className="book-details-link"
+          href={`/catalogo/${book.slug}`}
           tabIndex={decorative ? -1 : undefined}
         >
-          Comprar
+          Conhecer livro →
         </a>
       </div>
     </article>
@@ -288,7 +204,6 @@ export default function Home() {
       </section>
 
       <section className="home-who" id="quem-somos" aria-labelledby="who-title">
-        <p className="section-index">01</p>
         <div>
           <p className="eyebrow eyebrow-dark">Quem Somos</p>
           <h2 id="who-title">Uma editora completa.</h2>
@@ -315,8 +230,7 @@ export default function Home() {
             <h2 id="catalog-title">Catálogo em Destaque</h2>
           </div>
           <p>
-            Três coleções paradidáticas que abrem caminho para um catálogo em
-            expansão.
+            Uma seleção de seis livros para conhecer o universo da ROEL Editora.
           </p>
         </div>
 
@@ -332,7 +246,7 @@ export default function Home() {
                 aria-hidden={group === 1 ? "true" : undefined}
                 key={group}
               >
-                {books.map((book, index) => (
+                {featuredBooks.map((book, index) => (
                   <CatalogBookCard
                     book={book}
                     decorative={group === 1}
@@ -354,9 +268,8 @@ export default function Home() {
           </div>
         </div>
         <div className="services-grid">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <article className="service-card" key={service.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
@@ -367,7 +280,6 @@ export default function Home() {
       </section>
 
       <section className="biographies-home" aria-labelledby="biographies-title">
-        <p className="section-index">02</p>
         <div>
           <p className="eyebrow eyebrow-dark">Biografias e Memórias</p>
           <h2 id="biographies-title">Você tem uma história para contar?</h2>
@@ -397,8 +309,17 @@ export default function Home() {
         <div className="blog-grid">
           {blogCategories.map((category, index) => (
             <article key={category}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3>{category}</h3>
+              <a
+                className="blog-home-card-link"
+                href={`/blog#${blogCategorySlugs[index]}`}
+                aria-label={`Ler artigo: ${category}`}
+              >
+                <span className="blog-home-card-number">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3>{category}</h3>
+                <span className="blog-home-card-action">Ler artigo →</span>
+              </a>
             </article>
           ))}
         </div>
@@ -433,8 +354,8 @@ export default function Home() {
           </a>
           <div>
             <h2>
-              Não estamos construindo apenas uma editora. Estamos construindo
-              um universo literário onde toda história encontra seu lugar.
+              Não publicamos apenas livros. Entregamos um universo literário
+              onde toda história encontra seu lugar.
             </h2>
           </div>
           <a className="whatsapp" href="mailto:contato@roeleditora.com.br">
@@ -448,7 +369,9 @@ export default function Home() {
             <a href="/catalogo">Catálogo</a>
             <a href="/servicos">Serviços</a>
             <a href="/contato">Contato</a>
+            <a href="/compliance">Compliance</a>
             <a href="/privacidade">Privacidade</a>
+            <a href="/faq">FAQ</a>
           </nav>
         </div>
       </footer>
