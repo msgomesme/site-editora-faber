@@ -25,6 +25,10 @@ diretores. Além das páginas institucionais anteriores, foram concluídos:
   vitrine mais limpa; essas informações permanecem no Catálogo e nos detalhes;
 - exportador cPanel atualizado para incluir as páginas de compliance, FAQ e
   todas as páginas dinâmicas dos livros;
+- pacote `Editora-ROEL-cPanel-latest.zip` regenerado com a versão final e com a
+  abertura automática dos artigos do Blog por hash;
+- versão 3 publicada no Sites a partir do commit `826e92d`, disponível em
+  `https://editora-roel-v2.emailbwgomes.chatgpt.site`;
 - última compilação validada com `npm run build` sem erros.
 
 ## 1. Estado atual
