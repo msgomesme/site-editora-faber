@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const scriptsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectDir = path.dirname(scriptsDir);
 const previewOrigin = process.argv[2] ?? "http://localhost:3000";
-const publicBase = process.argv[3] ?? "/editora/";
+const publicBase = process.argv[3] ?? "/editora_V2/";
 const outputName = process.argv[4] ?? "export-cpanel-editora";
 const outputDir = path.join(projectDir, outputName);
 const routes = [

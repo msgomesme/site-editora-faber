@@ -47,7 +47,7 @@ O projeto contém:
 - mockups reais dos oito livros da coleção Mundo Neurodiverso;
 - sinopses dos oito livros da Coleção Mundo Neurodiverso em páginas individuais;
 - páginas individuais preparadas para todos os livros já cadastrados;
-- exportador estático para hospedagem via cPanel na subpasta `/editora/`;
+- exportador estático para hospedagem via cPanel na subpasta `/editora_V2/`;
 - versão local acessível normalmente por `http://localhost:3000`.
 
 O progresso de 28 de julho inclui:
@@ -224,9 +224,9 @@ introdutório, sem livros inventados.
 
 O site está sendo instalado em:
 
-`https://unioo.online/editora/`
+`https://unioo.online/editora_V2/`
 
-Por isso todos os recursos do pacote cPanel usam a base `/editora/`. O primeiro
+Por isso todos os recursos do pacote cPanel usam a base `/editora_V2/`. O primeiro
 pacote apontava para a raiz do domínio e carregava sem CSS; isso já foi
 corrigido.
 
@@ -239,14 +239,14 @@ Fluxo para gerar um novo pacote:
 ```bash
 npm run build
 npm run dev
-node scripts/export-cpanel.mjs http://localhost:3000 /editora/ export-cpanel-editora-latest
-cd export-cpanel-editora-latest
-zip -r ../Editora-ROEL-cPanel-latest.zip .
+node scripts/export-cpanel.mjs http://localhost:3000 /editora_V2/ export-cpanel-editora-v2-latest
+cd export-cpanel-editora-v2-latest
+zip -r ../Editora-ROEL-cPanel-editora-v2-latest.zip .
 ```
 
 No cPanel, extrair o conteúdo diretamente em:
 
-`public_html/editora`
+`public_html/editora_V2`
 
 O `index.html` e o `.htaccess` precisam ficar diretamente nessa pasta.
 
@@ -261,7 +261,12 @@ atualizada e as páginas individuais dos livros.
 
 Pacote atualizado gerado em 29 de julho de 2026:
 
-`Editora-ROEL-cPanel-latest.zip`
+`Editora-ROEL-cPanel-editora-v2-latest.zip`
+
+Este é o pacote corrigido para a instalação em `editora_V2`. O pacote anterior
+`Editora-ROEL-cPanel-latest.zip` usava a base `/editora/` e não deve ser
+reutilizado nessa pasta, pois faria o navegador carregar CSS, imagens e
+scripts da instalação antiga.
 
 Ele contém as páginas principais, 13 páginas individuais de livros, CSS,
 mockups, fontes, `.htaccess` e as instruções em `LEIA-ME.txt`.
@@ -288,7 +293,7 @@ usuário.
 O código local e o pacote cPanel são caminhos diferentes:
 
 - para o domínio próprio, usar o ZIP gerado por `scripts/export-cpanel.mjs` e
-  extrair diretamente em `public_html/editora` (ou na pasta correspondente ao
+  extrair diretamente em `public_html/editora_V2` (ou na pasta correspondente ao
   domínio configurado);
 - para o Sites/Cloudflare, é necessário salvar uma versão do código e publicar
   pelo projeto já existente em `.openai/hosting.json`;
@@ -314,7 +319,7 @@ O código local e o pacote cPanel são caminhos diferentes:
 - preservar o estilo editorial acolhedor;
 - evitar formas, cartões ou fundos brancos atrás de logos e mockups;
 - manter botões pill e navegação textual clara;
-- entregar um ZIP atualizado para `public_html/editora` após mudanças
+- entregar um ZIP atualizado para `public_html/editora_V2` após mudanças
   relevantes;
 - não alterar textos oficiais sem solicitação.
 
