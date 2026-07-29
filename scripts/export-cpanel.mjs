@@ -144,6 +144,22 @@ const staticScript = `document.addEventListener("submit", function (event) {
       encodeURIComponent("Quero assinar a newsletter com o e-mail: " + email);
   }
 });
+
+function openBlogArticleFromHash() {
+  var id = window.location.hash.slice(1);
+  if (!id) return;
+
+  var article = document.getElementById(id);
+  if (!article || article.tagName.toLowerCase() !== "details") return;
+
+  article.open = true;
+  window.requestAnimationFrame(function () {
+    article.scrollIntoView({ block: "start", behavior: "smooth" });
+  });
+}
+
+openBlogArticleFromHash();
+window.addEventListener("hashchange", openBlogArticleFromHash);
 `;
 
 const htaccess = `Options -Indexes
