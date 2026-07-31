@@ -2331,7 +2331,7 @@ footer {
 }
 
 .hero h1 em {
-  color: var(--light);
+  color: var(--white);
   display: block;
   font-style: normal;
 }
