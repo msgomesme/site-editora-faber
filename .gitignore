@@ -34,8 +34,14 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
+# TypeScript
+*.tsbuildinfo
 next-env.d.ts
+
+# Backup
+*.zip
+
+# typescript
 /dist/
 /.wrangler/
 /outputs/
@@ -44,3 +50,4 @@ next-env.d.ts
 # artefatos gerados para publicação manual no cPanel
 /export-cpanel*/
 /Editora-ROEL-cPanel*.zip
+*.zip

@@ -2,6 +2,8 @@
 
 import { books } from "./catalogo/books";
 import type { CatalogBook as Book } from "./catalogo/books";
+import { SiteFooter } from "./components/SiteChrome";
+import Link from "next/link";
 
 const featuredBooks = books.slice(0, 6);
 
@@ -120,13 +122,13 @@ function CatalogBookCard({
       </div>
       <div className="book-info">
         <h3>{book.title}</h3>
-        <a
+        <Link
           className="book-details-link"
           href={`/catalogo/${book.slug}`}
           tabIndex={decorative ? -1 : undefined}
         >
           Conhecer livro →
-        </a>
+        </Link>
       </div>
     </article>
   );
@@ -159,19 +161,19 @@ export default function Home() {
       </div>
 
       <header className="site-header">
-        <a className="brand-logo" href="#inicio" aria-label="ROEL Editora — início">
+        <Link className="brand-logo" href="#inicio" aria-label="ROEL Editora — início">
           <img src="/logo-roel-transparent-cropped.png" alt="ROEL Editora" />
-        </a>
+        </Link>
         <nav aria-label="Navegação principal">
-          <a href="#inicio">Início</a>
-          <a href="/quem-somos">Quem Somos</a>
-          <a href="/catalogo">Catálogo</a>
-          <a href="/servicos">Serviços</a>
-          <a href="/blog">Blog</a>
+          <Link href="#inicio">INÍCIO</Link>
+          <Link href="/quem-somos">QUEM SOMOS</Link>
+          <Link href="/catalogo">CATÁLOGO</Link>
+          <Link href="/servicos">SERVIÇOS</Link>
+          <Link href="/blog">BLOG</Link>
         </nav>
-        <a className="header-cta" href="/parceiros">
-          Seja nosso parceiro
-        </a>
+        <Link className="header-cta" href="/parceiros">
+          SEJA NOSSO PARCEIRO
+        </Link>
       </header>
 
       <section className="hero letter-section" id="inicio">
@@ -179,10 +181,11 @@ export default function Home() {
         <div className="hero-copy" id="conteudo">
           <p className="eyebrow">
             <span />
-            ROEL Editora
+            ROEL EDITORA
           </p>
           <h1>
-            Literatura que acolhe. <em>Histórias que transformam.</em>
+            <span className="hero-line">Literatura que acolhe.</span>
+            <span className="hero-line">Histórias que transformam.</span>
           </h1>
           <p className="hero-official-subtitle">
             A ROEL Editora nasce da parceria entre Roberto Araújo e Elton
@@ -190,14 +193,14 @@ export default function Home() {
             inspiram leitores e transformam escolas.
           </p>
           <div className="hero-actions">
-            <a className="button button-dark" href="#catalogo">
-              Conheça nosso catálogo
-            </a>
+            <Link className="button button-hero-white" href="#catalogo">
+              CONHEÇA NOSSO CATÁLOGO
+            </Link>
             <a
-              className="button button-outline"
-              href="mailto:contato@roeleditora.com.br?subject=Quero ser parceiro"
+              className="button button-hero-white"
+              href="mailto:contato@editoraroel.com.br?subject=Quero ser parceiro"
             >
-              Seja nosso parceiro
+              SEJA NOSSO PARCEIRO
             </a>
           </div>
         </div>
@@ -217,17 +220,17 @@ export default function Home() {
             autoajuda e desenvolvimento pessoal. Também oferecemos serviços
             editoriais completos e solução gráfica para terceiros.
           </p>
-          <a className="button section-button" href="/quem-somos">
+          <Link className="button section-button" href="/quem-somos">
             Saiba mais →
-          </a>
+          </Link>
         </div>
       </section>
 
       <section className="catalog" id="catalogo" aria-labelledby="catalog-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow eyebrow-light">Nossas coleções</p>
-            <h2 id="catalog-title">Catálogo em Destaque</h2>
+            <p className="eyebrow eyebrow-light">NOSSAS COLEÇÕES</p>
+            <h2 id="catalog-title">CATÁLOGO EM DESTAQUE</h2>
           </div>
           <p>
             Uma seleção de seis livros para conhecer o universo da ROEL Editora.
@@ -240,16 +243,16 @@ export default function Home() {
           aria-label="Catálogo em destaque"
         >
           <div className="book-grid">
-            {[0, 1].map((group) => (
+            {[0, 1, 2, 3].map((group) => (
               <div
                 className="book-track-group"
-                aria-hidden={group === 1 ? "true" : undefined}
+                aria-hidden={group > 0 ? "true" : undefined}
                 key={group}
               >
                 {featuredBooks.map((book, index) => (
                   <CatalogBookCard
                     book={book}
-                    decorative={group === 1}
+                    decorative={group > 0}
                     index={index}
                     key={`${group}-${book.title}`}
                   />
@@ -284,10 +287,15 @@ export default function Home() {
           <p className="eyebrow eyebrow-dark">Biografias e Memórias</p>
           <h2 id="biographies-title">Você tem uma história para contar?</h2>
         </div>
-        <p>
-          A ROEL Editora publica biografias e memórias com todo o cuidado
-          editorial que a sua trajetória merece. Do original ao livro impresso.
-        </p>
+        <div>
+          <p>
+            A ROEL Editora publica biografias e memórias com todo o cuidado
+            editorial que a sua trajetória merece. Do original ao livro impresso.
+          </p>
+          <Link className="button section-button" href="/servicos#biografias">
+            Saiba mais →
+          </Link>
+        </div>
       </section>
 
       <section className="impact-home" aria-labelledby="impact-title">
@@ -347,34 +355,7 @@ export default function Home() {
         </form>
       </section>
 
-      <footer>
-        <div className="footer-main">
-          <a className="brand-logo footer-logo" href="#inicio">
-            <img src="/logo-roel-transparent-cropped.png" alt="ROEL Editora" />
-          </a>
-          <div>
-            <h2>
-              Não publicamos apenas livros. Entregamos um universo literário
-              onde toda história encontra seu lugar.
-            </h2>
-          </div>
-          <a className="whatsapp" href="mailto:contato@roeleditora.com.br">
-            contato@roeleditora.com.br
-          </a>
-        </div>
-        <div className="footer-links">
-          <p>ROEL Editora</p>
-          <nav aria-label="Links do rodapé">
-            <a href="/quem-somos">Quem Somos</a>
-            <a href="/catalogo">Catálogo</a>
-            <a href="/servicos">Serviços</a>
-            <a href="/contato">Contato</a>
-            <a href="/compliance">Compliance</a>
-            <a href="/privacidade">Privacidade</a>
-            <a href="/faq">FAQ</a>
-          </nav>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

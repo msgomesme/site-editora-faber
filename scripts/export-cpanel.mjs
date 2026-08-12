@@ -126,7 +126,7 @@ const staticScript = `document.addEventListener("submit", function (event) {
       String(data.get("message") || "")
     ].join("\\n");
     window.location.href =
-      "mailto:contato@roeleditora.com.br?subject=" +
+      "mailto:contato@editoraroel.com.br?subject=" +
       encodeURIComponent(assunto) +
       "&body=" +
       encodeURIComponent(corpo);
@@ -138,7 +138,7 @@ const staticScript = `document.addEventListener("submit", function (event) {
     var emailInput = form.querySelector('input[type="email"]');
     var email = emailInput ? emailInput.value : "";
     window.location.href =
-      "mailto:contato@roeleditora.com.br?subject=" +
+      "mailto:contato@editoraroel.com.br?subject=" +
       encodeURIComponent("Cadastro na newsletter") +
       "&body=" +
       encodeURIComponent("Quero assinar a newsletter com o e-mail: " + email);
@@ -192,7 +192,7 @@ const instructions = `EDITORA ROEL — PACOTE PARA ${publicBase}
 6. Atualize o site com Ctrl+F5 ou Cmd+Shift+R.
 
 Os formulários abrem o aplicativo de e-mail do visitante e direcionam as
-mensagens para contato@roeleditora.com.br.
+mensagens para contato@editoraroel.com.br.
 `;
 
 await writeFile(path.join(outputDir, "assets/site.js"), staticScript, "utf8");

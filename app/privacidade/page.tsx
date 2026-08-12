@@ -42,11 +42,6 @@ export default function PrivacidadePage() {
           </aside>
 
           <div className="legal-prose">
-            <p className="legal-note">
-              Alguns dados cadastrais da editora ainda precisam ser preenchidos
-              antes da publicação definitiva desta política.
-            </p>
-
             <article id="introducao">
               <h2>1. Introdução</h2>
               <p>
@@ -106,10 +101,8 @@ export default function PrivacidadePage() {
               <h2>5. Informações sobre a Controladora e o Encarregado de Dados</h2>
               <div className="legal-contact-card">
                 <p><strong>Controladora:</strong> ROEL Editora</p>
-                <p><strong>CNPJ:</strong> [inserir CNPJ]</p>
-                <p><strong>Endereço:</strong> [inserir endereço]</p>
-                <p><strong>E-mail:</strong> [inserir e-mail de contato]</p>
-                <p><strong>Encarregado de Dados (DPO):</strong> <a href="mailto:privacidade@roeleditora.com.br">privacidade@roeleditora.com.br</a></p>
+                <p><strong>E-mail Institucional:</strong> <a href="mailto:contato@editoraroel.com.br">contato@editoraroel.com.br</a></p>
+                <p><strong>Encarregado de Dados (DPO):</strong> <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a></p>
               </div>
             </article>
 
@@ -214,7 +207,7 @@ export default function PrivacidadePage() {
                 <li>Revogar o consentimento a qualquer tempo.</li>
                 <li>Ser informado sobre o compartilhamento com terceiros.</li>
               </ul>
-              <p>Para exercer seus direitos, entre em contato pelo e-mail: <a href="mailto:privacidade@roeleditora.com.br">privacidade@roeleditora.com.br</a></p>
+              <p>Para exercer seus direitos, entre em contato pelo e-mail: <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a></p>
             </article>
 
             <article id="consideracoes">
@@ -227,7 +220,7 @@ export default function PrivacidadePage() {
               </p>
               <p><strong>Última atualização:</strong> julho de 2026</p>
               <p>
-                Em caso de dúvidas, entre em contato pelo e-mail: <a href="mailto:privacidade@roeleditora.com.br">privacidade@roeleditora.com.br</a>
+                Em caso de dúvidas, entre em contato pelo e-mail: <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a>
               </p>
             </article>
           </div>

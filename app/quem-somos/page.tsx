@@ -9,15 +9,15 @@ const team = [
   },
   {
     name: "Elton Henrique",
-    role: "Vice-Presidente e Diretor Administrativo",
+    role: "Presidente e Diretor Administrativo",
     description:
       "Empresário, vice-presidente do IRA INTEGRA TEA. Responsável pela gestão, estrutura e expansão da editora.",
   },
   {
-    name: "NAPE",
-    role: "Núcleo de Apoio à Prática Educativa",
+    name: "Fabio Cavalcanti",
+    role: "Diretor Pedagógico",
     description:
-      "Equipe pedagógica responsável pela validação clínica e pedagógica de cada obra, alinhamento com a BNCC e produção dos materiais de apoio.",
+      "Líder do NAPE (Núcleo de Apoio à Prática Educativa). Responsável pela validação clínica e pedagógica das obras, alinhamento à BNCC, produção de materiais de apoio, curadoria técnica e coordenação de revisores.",
   },
   {
     name: "Parceiros Editoriais",
@@ -46,27 +46,29 @@ export default function QuemSomosPage() {
           </p>
           <p>
             Roberto Araújo, enfermeiro, empresário e presidente do IRA INTEGRA
-            TEA, diagnosticado tardiamente com TEA e TDAH aos 48 anos, traz a
-            vivência clínica, pessoal e literária. Elton, vice-presidente do
-            IRA, agrega a visão de gestão, estrutura e expansão. Juntos, formam
-            a base de uma editora completa.
+            TEA, diagnosticado tardiamente com TEA nível 1 de suporte e TDAH aos
+            48 anos, traz a vivência clínica, pessoal e literária. Elton
+            Henrique, vice-presidente do IRA INTEGRA TEA, agrega a visão de
+            gestão, estrutura e expansão. Juntos, formam a base de uma editora
+            completa.
           </p>
           <p>
-            A ROEL Editora é uma editora completa. Atuamos em todos os
-            segmentos: ficção e não ficção, literatura infantojuvenil, obras
-            paradidáticas, biografias e memórias, livros técnicos e científicos,
-            autoajuda e desenvolvimento pessoal. Não nos limitamos a gêneros ou
-            nichos. Publicamos livros que formam cidadãos, acolhem famílias,
-            inspiram leitores e transformam escolas.
+            A ROEL Editora atua em todos os segmentos: ficção e não ficção,
+            literatura infantojuvenil, obras paradidáticas, biografias e
+            memórias, livros técnicos e científicos, autoajuda e desenvolvimento
+            pessoal. Não nos limitamos a gêneros ou nichos. Publicamos livros
+            que formam cidadãos, acolhem famílias, inspiram leitores e
+            transformam escolas.
           </p>
           <p>
-            <strong>Nossas três primeiras coleções</strong> — a{" "}
+            <strong>Nossas três primeiras coleções:</strong> a{" "}
             <em>Coleção Mundo Neurodiverso</em>, a{" "}
             <em>Coleção Janelas para o Mundo</em> e a{" "}
-            <em>Coleção Protagonistas</em> — são coleções paradidáticas que
-            nasceram do protagonismo de Roberto Araújo à frente do IRA INTEGRA
-            TEA. Elas representam o ponto de partida de um catálogo que será tão
-            diverso quanto os leitores que queremos alcançar.
+            <em>Coleção Protagonistas do Amanhã</em>, são coleções
+            paradidáticas que nasceram do protagonismo de Roberto Araújo à
+            frente do IRA INTEGRA TEA. Elas representam o ponto de partida de um
+            catálogo que será tão diverso quanto os leitores que queremos
+            alcançar.
           </p>
           <p>
             Além da produção própria, oferecemos serviços editoriais completos e
@@ -107,10 +109,10 @@ export default function QuemSomosPage() {
         </div>
       </section>
 
-      <section className="content-section split-panels">
+      <section className="content-section split-panels" aria-labelledby="nape-title">
         <article>
           <p className="eyebrow eyebrow-dark">NAPE</p>
-          <h2>Núcleo de Apoio à Prática Educativa</h2>
+          <h2 id="nape-title">Núcleo de Apoio à Prática Educativa</h2>
           <p>
             Validação pedagógica e clínica das obras, alinhamento BNCC, produção
             de materiais de apoio, suporte a escolas e formação de educadores.
@@ -127,15 +129,16 @@ export default function QuemSomosPage() {
         </article>
       </section>
 
-      <section className="impact-home impact-home-detailed">
+      <section className="impact-home impact-home-detailed" aria-labelledby="impact-title">
         <p className="eyebrow eyebrow-dark">Impacto Social</p>
-        <h2>
+        <h2 id="impact-title">Compromisso Social e Legado ODS</h2>
+        <p>
           A ROEL Editora é uma empresa privada com compromisso social. Parte do
           valor arrecadado com as vendas é destinada ao IRA INTEGRA TEA,
           instituição que presidimos e que foi uma das 1.200 organizações
           selecionadas para o Selo ODS Brasil 2026, integrante do legado da
           Agenda 2030 da ONU.
-        </h2>
+        </p>
         <p>
           Isso significa que cada livro adquirido, cada serviço contratado e
           cada parceria firmada com a ROEL Editora gera impacto social real,

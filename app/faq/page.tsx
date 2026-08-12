@@ -11,11 +11,11 @@ const questions = [
   ],
   [
     "Como posso acessar ou corrigir meus dados?",
-    "Basta enviar um e-mail para privacidade@roeleditora.com.br solicitando acesso ou correção. Responderemos em até 15 dias úteis.",
+    "Basta enviar um e-mail para privacidade@editoraroel.com.br solicitando acesso ou correção. Responderemos em até 15 dias úteis.",
   ],
   [
     "Como posso solicitar a exclusão dos meus dados?",
-    "Envie um e-mail para privacidade@roeleditora.com.br solicitando a exclusão. Seus dados serão apagados, exceto quando a lei exigir a manutenção por prazos específicos, como no caso de notas fiscais.",
+    "Envie um e-mail para privacidade@editoraroel.com.br solicitando a exclusão. Seus dados serão apagados, exceto quando a lei exigir a manutenção por prazos específicos, como no caso de notas fiscais.",
   ],
   [
     "O que são cookies e como posso controlá-los?",
@@ -43,11 +43,11 @@ const questions = [
   ],
   [
     "Quem é o Encarregado de Dados (DPO) da ROEL Editora?",
-    "O DPO pode ser contatado pelo e-mail privacidade@roeleditora.com.br para qualquer dúvida ou solicitação relacionada à proteção dos dados.",
+    "O DPO pode ser contatado pelo e-mail privacidade@editoraroel.com.br para qualquer dúvida ou solicitação relacionada à proteção dos dados.",
   ],
   [
     "O que fazer se eu identificar algum problema com meus dados?",
-    "Entre em contato imediatamente pelo e-mail privacidade@roeleditora.com.br. Em caso de incidente de segurança, notificaremos você e a ANPD sempre que necessário.",
+    "Entre em contato imediatamente pelo e-mail privacidade@editoraroel.com.br. Em caso de incidente de segurança, notificaremos você e a ANPD sempre que necessário.",
   ],
 ];
 
@@ -64,7 +64,7 @@ export default function FaqPage() {
           <h2>Informação acessível também é cuidado.</h2>
           <p>
             Não encontrou o que procura? Fale com nosso Encarregado de Dados
-            pelo e-mail <a href="mailto:privacidade@roeleditora.com.br">privacidade@roeleditora.com.br</a>.
+            pelo e-mail <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a>.
           </p>
         </div>
         <div className="faq-list">

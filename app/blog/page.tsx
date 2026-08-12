@@ -37,9 +37,9 @@ export default function BlogPage() {
         >
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">01 · Neurodiversidade</p>
-            <h2 id="neurodiversidade-title">
+            <span className="summary-title" id="neurodiversidade-title">
               O que é e por que esse conceito importa na educação
-            </h2>
+            </span>
           </summary>
 
           <div className="blog-post-body">
@@ -119,9 +119,9 @@ export default function BlogPage() {
         >
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">02 · Educação Inclusiva</p>
-            <h2 id="educacao-inclusiva-title">
+            <span className="summary-title" id="educacao-inclusiva-title">
               O direito de aprender junto
-            </h2>
+            </span>
           </summary>
 
           <div className="blog-post-body">
@@ -208,9 +208,9 @@ export default function BlogPage() {
         >
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">03 · Dicas para Pais e Educadores</p>
-            <h2 id="dicas-familias-title">
+            <span className="summary-title" id="dicas-familias-title">
               Como identificar e apoiar uma criança neurodivergente
-            </h2>
+            </span>
           </summary>
 
           <div className="blog-post-body">
@@ -325,9 +325,9 @@ export default function BlogPage() {
         >
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">04 · Lançamentos</p>
-            <h2 id="lancamentos-title">
+            <span className="summary-title" id="lancamentos-title">
               Acompanhe as novidades da ROEL Editora
-            </h2>
+            </span>
           </summary>
 
           <div className="blog-post-body">
@@ -359,7 +359,7 @@ export default function BlogPage() {
               Fundamental (Anos Iniciais).
             </p>
             <p>
-              <strong>Coleção Protagonistas</strong> — três títulos voltados aos
+              <strong>Coleção Protagonistas do Amanhã</strong> — três títulos voltados aos
               Anos Finais do Ensino Fundamental e Ensino Médio, com foco em
               empreendedorismo, protagonismo e autonomia juvenil:
             </p>
@@ -401,7 +401,7 @@ export default function BlogPage() {
         >
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">05 · Impacto Social</p>
-            <h2 id="impacto-social-title">Compromisso social que transforma</h2>
+            <span className="summary-title" id="impacto-social-title">Compromisso social que transforma</span>
           </summary>
 
           <div className="blog-post-body">
@@ -428,9 +428,9 @@ export default function BlogPage() {
         >
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">06 · Bastidores</p>
-            <h2 id="bastidores-title">
+            <span className="summary-title" id="bastidores-title">
               Como nasce um livro na ROEL Editora
-            </h2>
+            </span>
           </summary>
 
           <div className="blog-post-body">

@@ -1,11 +1,11 @@
 # Handoff — Site Editora ROEL
 
-Última atualização: 29 de julho de 2026, às 13h.
+Última atualização: 4 de agosto de 2026.
 
-## Atualização de 29 de julho de 2026
+## Atualização de 4 de agosto de 2026
 
-O projeto foi preparado para a próxima etapa de publicação e apresentação aos
-diretores. Além das páginas institucionais anteriores, foram concluídos:
+O projeto foi publicado definitivamente na Hostinger no domínio raiz `editoraroel.com.br`.
+Principais ações recentes:
 
 - páginas `/compliance`, `/privacidade` e `/faq` para transparência e
   governança;
@@ -29,13 +29,13 @@ diretores. Além das páginas institucionais anteriores, foram concluídos:
   abertura automática dos artigos do Blog por hash;
 - versão 3 publicada no Sites a partir do commit `826e92d`, disponível em
   `https://editora-roel-v2.emailbwgomes.chatgpt.site`;
-- última compilação validada com `npm run build` sem erros.
+- erro de digitação (`jimport`) em `app/catalogo/page.tsx` corrigido, permitindo build limpo;
+- pacote exportado configurado para a raiz (`/`) e preparado para Hostinger;
+- versão final instalada com sucesso pelo cliente no domínio `www.editoraroel.com.br`.
 
 ## 1. Estado atual
 
-O site institucional da Editora ROEL está funcional, responsivo e com páginas
-institucionais, catálogo dinâmico e conteúdo editorial. A última compilação com
-`npm run build` foi concluída sem erros.
+O site institucional da Editora ROEL está no ar no domínio definitivo (`www.editoraroel.com.br`). O projeto está funcional, responsivo e com páginas institucionais, catálogo dinâmico e conteúdo editorial. A última compilação com `npm run build` foi concluída sem erros.
 
 O projeto contém:
 
@@ -47,7 +47,7 @@ O projeto contém:
 - mockups reais dos oito livros da coleção Mundo Neurodiverso;
 - sinopses dos oito livros da Coleção Mundo Neurodiverso em páginas individuais;
 - páginas individuais preparadas para todos os livros já cadastrados;
-- exportador estático para hospedagem via cPanel na subpasta `/editora_V2/`;
+- exportador estático preparado para gerar versão de produção na raiz do domínio;
 - versão local acessível normalmente por `http://localhost:3000`.
 
 O progresso de 28 de julho inclui:
@@ -220,15 +220,11 @@ talentos e conquistas. Ainda não foram fornecidos títulos, temas ou mockups pa
 uma grade própria dessa coleção. Portanto, ela aparece apenas no bloco
 introdutório, sem livros inventados.
 
-## 8. cPanel e domínio
+## 8. Hospedagem e domínio definitivo
 
-O site está sendo instalado em:
+O site foi instalado e está no ar na **Hostinger** sob o domínio:
 
-`https://unioo.online/editora_V2/`
-
-Por isso todos os recursos do pacote cPanel usam a base `/editora_V2/`. O primeiro
-pacote apontava para a raiz do domínio e carregava sem CSS; isso já foi
-corrigido.
+`https://www.editoraroel.com.br/`
 
 Exportador:
 
@@ -239,37 +235,23 @@ Fluxo para gerar um novo pacote:
 ```bash
 npm run build
 npm run dev
-node scripts/export-cpanel.mjs http://localhost:3000 /editora_V2/ export-cpanel-editora-v2-latest
-cd export-cpanel-editora-v2-latest
-zip -r ../Editora-ROEL-cPanel-editora-v2-latest.zip .
+node scripts/export-cpanel.mjs http://localhost:3000 / export-hostinger-editora-roel
+cd export-hostinger-editora-roel
+zip -r ../Editora-ROEL-Hostinger.zip .
 ```
 
-No cPanel, extrair o conteúdo diretamente em:
+No gerenciador de arquivos da hospedagem (ex: hPanel), extrair o conteúdo diretamente em:
 
-`public_html/editora_V2`
+`public_html`
 
-O `index.html` e o `.htaccess` precisam ficar diretamente nessa pasta.
+O `index.html` e o `.htaccess` precisam ficar diretamente nessa pasta (raiz).
 
 Os formulários são estáticos: abrem o cliente de e-mail do visitante e enviam
-para `contato@roeleditora.com.br`. Não existe backend PHP ou armazenamento de
+para `contato@editoraroel.com.br`. Não existe backend PHP ou armazenamento de
 leads no cPanel.
 
-O arquivo `Editora-ROEL-cPanel-com-coracao-valente.zip` é um pacote antigo,
-preservado apenas como referência. Sempre regenerar um pacote novo antes do
-envio ao domínio, pois o exportador agora inclui compliance, FAQ, privacidade
-atualizada e as páginas individuais dos livros.
-
-Pacote atualizado gerado em 29 de julho de 2026:
-
-`Editora-ROEL-cPanel-editora-v2-latest.zip`
-
-Este é o pacote corrigido para a instalação em `editora_V2`. O pacote anterior
-`Editora-ROEL-cPanel-latest.zip` usava a base `/editora/` e não deve ser
-reutilizado nessa pasta, pois faria o navegador carregar CSS, imagens e
-scripts da instalação antiga.
-
-Ele contém as páginas principais, 13 páginas individuais de livros, CSS,
-mockups, fontes, `.htaccess` e as instruções em `LEIA-ME.txt`.
+O arquivo `Editora-ROEL-Hostinger.zip` é o pacote principal usado para essa publicação na raiz.
+Ao gerar novos pacotes para atualização, garanta que o caminho base na exportação seja `/` para não quebrar estilos e imagens.
 
 ## 9. Sites/Cloudflare
 
@@ -301,16 +283,14 @@ O código local e o pacote cPanel são caminhos diferentes:
   acessos/DNS do provedor. Não compartilhar credenciais no chat; basta fornecer
   o hostname e seguir os registros DNS apresentados pelo provedor.
 
-## 11. Pontos que ainda podem evoluir
+## 11. Pontos que ainda podem evoluir (Passos Futuros)
 
-- obter e adicionar os cinco mockups da coleção Janelas para o Mundo;
-- receber títulos, temas e mockups da Coleção Protagonistas;
-- integrar newsletter e formulário a um backend real;
-- substituir links de compra por URLs definitivas;
-- preencher o blog com artigos;
-- revisar textos de LGPD com responsável jurídico;
-- republicar a versão mais recente no Sites, caso autorizado;
-- configurar domínio definitivo diretamente na hospedagem desejada.
+- **Mockups - Janelas para o Mundo:** obter e adicionar os cinco mockups para essa coleção (atualmente usam capas sólidas em rosa).
+- **Coleção Protagonistas:** receber e adicionar os títulos, temas e mockups para criar a grade exclusiva dessa coleção no catálogo.
+- **Artigos do Blog:** criar e preencher os primeiros artigos reais para substituir os espaços em branco na página de Blog.
+- **Links de compra:** substituir os links provisórios nas páginas de detalhes dos livros pelas URLs definitivas de venda externa.
+- **Integração de Contatos:** integrar newsletter e formulário a um backend real (como Mailchimp ou banco de dados próprio).
+- **Ajustes Jurídicos:** revisar textos de LGPD e Privacidade com o responsável jurídico da empresa.
 
 ## 12. Preferências do usuário
 

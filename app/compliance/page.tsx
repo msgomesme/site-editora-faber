@@ -8,12 +8,11 @@ const codeIndex = [
   ["05", "Compromissos definidos", "compromissos"],
   ["06", "Recomendações para o ambiente de trabalho", "ambiente-trabalho"],
   ["07", "Relacionamento com setores públicos", "setores-publicos"],
-  ["08", "PNLD", "pnld"],
-  ["09", "Diretrizes para autores", "diretrizes-autores"],
-  ["10", "O que não toleramos", "nao-toleramos"],
-  ["11", "Medidas disciplinares", "medidas-disciplinares"],
-  ["12", "Canal de Integridade", "canal-integridade"],
-  ["13", "Comitê de Integridade", "comite-integridade"],
+  ["08", "Diretrizes para autores", "diretrizes-autores"],
+  ["09", "O que não toleramos", "nao-toleramos"],
+  ["10", "Medidas disciplinares", "medidas-disciplinares"],
+  ["11", "Canal de Integridade", "canal-integridade"],
+  ["12", "Comitê de Integridade", "comite-integridade"],
 ];
 
 export default function CompliancePage() {
@@ -180,18 +179,8 @@ export default function CompliancePage() {
               </p>
             </article>
 
-            <article id="pnld">
-              <h3>8. PNLD — Programa Nacional do Livro e do Material Didático</h3>
-              <p>
-                A participação da ROEL Editora no PNLD e demais programas
-                governamentais será conduzida com estrita observância às normas
-                do FNDE e do MEC, garantindo a lisura de todo o processo, desde
-                a inscrição até a distribuição das obras.
-              </p>
-            </article>
-
             <article id="diretrizes-autores">
-              <h3>9. Diretrizes para autores</h3>
+              <h3>8. Diretrizes para autores</h3>
               <p>Todo autor que publica com a ROEL Editora deve:</p>
               <ul>
                 <li>Respeitar os valores de inclusão e diversidade da editora.</li>
@@ -202,7 +191,7 @@ export default function CompliancePage() {
             </article>
 
             <article id="nao-toleramos">
-              <h3>10. O que não toleramos</h3>
+              <h3>9. O que não toleramos</h3>
               <ul>
                 <li>Fraude, corrupção ou suborno em qualquer nível.</li>
                 <li>Assédio moral, sexual ou discriminação de qualquer natureza.</li>
@@ -213,23 +202,19 @@ export default function CompliancePage() {
               </ul>
             </article>
 
-            <article id="medidas-disciplinares">
-              <h3>11. Medidas disciplinares</h3>
+            <article id="canal-integridade">
+              <h3>11. Canal de Integridade</h3>
               <p>
-                O descumprimento deste Código de Conduta sujeitará o infrator a
-                medidas disciplinares proporcionais à gravidade da falta,
-                podendo incluir:
+                A ROEL Editora mantém um Canal de Integridade permanente,
+                acessível a todos os colaboradores, autores, parceiros,
+                fornecedores e ao público em geral, para o recebimento de
+                denúncias, dúvidas e orientações relacionadas a condutas éticas e
+                ao cumprimento deste Código de Conduta.
               </p>
-              <ul>
-                <li>Advertência verbal ou escrita.</li>
-                <li>Suspensão temporária.</li>
-                <li>Rescisão contratual ou de parceria.</li>
-                <li>Comunicação às autoridades competentes, quando couber.</li>
-              </ul>
             </article>
 
             <article id="comite-integridade">
-              <h3>13. Comitê de Integridade</h3>
+              <h3>12. Comitê de Integridade</h3>
               <p>
                 O Comitê de Integridade é o órgão responsável por receber,
                 apurar e deliberar sobre as denúncias encaminhadas ao Canal de
@@ -244,7 +229,7 @@ export default function CompliancePage() {
       <section className="legal-section legal-section-sage" id="canal-integridade">
         <div className="legal-layout legal-layout-channel">
           <div className="legal-prose">
-            <p className="eyebrow eyebrow-dark">12 · Canal de Integridade</p>
+            <p className="eyebrow eyebrow-dark">11 · Canal de Integridade</p>
             <h2>Fale com o Comitê de Integridade.</h2>
             <p>
               A ROEL Editora mantém um Canal de Integridade permanente,
@@ -279,7 +264,7 @@ export default function CompliancePage() {
               <li><strong>Registro documental:</strong> cada denúncia recebe um número de protocolo e é documentada integralmente.</li>
             </ul>
             <p className="legal-contact">
-              E-mail: <a href="mailto:integridade@roeleditora.com.br">integridade@roeleditora.com.br</a>
+              E-mail: <a href="mailto:integridade@editoraroel.com.br">integridade@editoraroel.com.br</a>
             </p>
             <p>
               O Comitê de Integridade tem até 30 dias corridos para concluir a
@@ -290,7 +275,7 @@ export default function CompliancePage() {
 
           <form
             className="integrity-form"
-            action="mailto:integridade@roeleditora.com.br"
+            action="mailto:integridade@editoraroel.com.br"
             method="post"
             encType="multipart/form-data"
           >

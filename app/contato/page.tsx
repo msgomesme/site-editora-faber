@@ -39,7 +39,7 @@ const faq = [
   ],
   [
     "Participam de licitações?",
-    "Sim. Email: licitacoes@roeleditora.com.br",
+    "Sim. E-mail: licitacoes@editoraroel.com.br",
   ],
   [
     "Publicam biografias?",
@@ -52,15 +52,20 @@ export default function ContatoPage() {
     <SubpageShell
       eyebrow="Contato"
       title="Fale com a ROEL Editora."
-      intro="contato@roeleditora.com.br"
+      intro="contato@editoraroel.com.br"
     >
-      <section className="contact-section">
+      <section className="contact-section" aria-labelledby="contact-title">
         <form
           className="contact-form"
           onSubmit={(event) => {
             event.preventDefault();
-            window.location.href =
-              "mailto:contato@roeleditora.com.br?subject=Contato pelo site";
+            const data = new FormData(event.currentTarget);
+            const name = data.get("name") || "";
+            const email = data.get("email") || "";
+            const subject = data.get("subject") || "Contato pelo site";
+            const message = data.get("message") || "";
+            const body = `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`;
+            window.location.href = `mailto:contato@editoraroel.com.br?subject=${encodeURIComponent(String(subject))}&body=${encodeURIComponent(body)}`;
           }}
         >
           <label>

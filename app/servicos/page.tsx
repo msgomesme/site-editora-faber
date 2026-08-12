@@ -69,7 +69,7 @@ export default function ServicosPage() {
             merece uma editora à altura.
           </h2>
           <p>
-            Inclusos: revisão, diagramação, capa, ISBN, ficha catalográfica e
+            Itens inclusos: revisão, diagramação, capa, ISBN, ficha catalográfica e
             impressão.
           </p>
         </div>
@@ -83,11 +83,11 @@ export default function ServicosPage() {
       <section className="bids-section">
         <p className="eyebrow eyebrow-dark">Editais e Licitações</p>
         <h2>
-          Participamos de PNLD, PNLD Literário, licitações estaduais e
-          municipais de material paradidático e serviços gráficos.
+          Participamos de licitações estaduais e municipais de material
+          paradidático e serviços gráficos.
         </h2>
-        <a className="button section-button" href="mailto:licitacoes@roeleditora.com.br">
-          licitacoes@roeleditora.com.br
+        <a className="button section-button" href="mailto:licitacoes@editoraroel.com.br">
+          licitacoes@editoraroel.com.br
         </a>
       </section>
     </SubpageShell>

@@ -1,7 +1,9 @@
 import { SubpageShell } from "../components/SiteChrome";
+import Link from "next/link";
 import {
   janelasParaOMundo,
   mundoNeurodiverso,
+  protagonistasDoAmanha,
   type CatalogBook,
 } from "./books";
 
@@ -36,12 +38,17 @@ function CollectionGrid({
           <h3>{book.title}</h3>
           <p>{book.theme}</p>
           <div className="catalog-card-actions">
-            <a className="catalog-details" href={`/catalogo/${book.slug}`}>
+            <Link
+              className="catalog-details"
+              href={`/catalogo/${book.slug}`}
+              aria-label={`Ver sinopse do livro ${book.title}`}
+            >
               Ver sinopse →
-            </a>
+            </Link>
             <a
               className="catalog-buy"
-              href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+              href={`mailto:contato@editoraroel.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+              aria-label={`Comprar o livro ${book.title}`}
             >
               Comprar
             </a>
@@ -62,38 +69,33 @@ export default function CatalogoPage() {
       <section className="content-section collection-intro">
         <p className="eyebrow eyebrow-dark">Nossas Coleções</p>
         <h2>Três coleções paradidáticas que abrem caminho para um catálogo em expansão.</h2>
-        <div className="split-panels">
+        <div className="collection-summary-grid">
           <article>
             <h3>Coleção Mundo Neurodiverso</h3>
             <p>
               8 livros sobre neurodiversidade. Cada livro acompanha o Roteiro do
-              Pertencimento.
-            </p>
-            <p>
-              Oito histórias. Oito protagonistas. Uma única missão: mostrar que
-              cada criança tem uma maneira única de aprender, sentir, pensar e
-              enxergar o mundo.
+              Pertencimento. Oito histórias. Oito protagonistas. Uma única
+              missão: mostrar que cada criança tem uma maneira única de
+              aprender, sentir, pensar e enxergar o mundo.
             </p>
           </article>
           <article>
             <h3>Coleção Janelas para o Mundo</h3>
             <p>
-              5 livros sobre deficiência física e sensorial, em desenvolvimento.
-            </p>
-            <p>
-              Cinco histórias. Cinco protagonistas. Uma missão: mostrar que
-              nenhuma deficiência é maior que o potencial de uma criança.
+              5 livros sobre deficiência visual, surdez, deficiência física,
+              amputação e paralisia cerebral. Cada livro acompanha o Roteiro do
+              Pertencimento. Cinco histórias. Cinco protagonistas. Uma única
+              missão: mostrar que nenhuma limitação define o potencial de uma
+              criança.
             </p>
           </article>
           <article>
-            <h3>Coleção Protagonistas</h3>
+            <h3>Coleção Protagonistas do Amanhã</h3>
             <p>
-              Uma coleção dedicada a trajetórias, talentos e conquistas que
-              merecem ser conhecidos.
-            </p>
-            <p>
-              Histórias de protagonismo que preservam legados, valorizam
-              exemplos e inspiram crianças e jovens a transformar o mundo.
+              3 livros sobre juventude e descoberta. Cada livro acompanha o
+              Roteiro do Pertencimento. Três histórias. Três protagonistas. Uma
+              única missão: mostrar que cada jovem tem o poder de transformar
+              sua própria história.
             </p>
           </article>
         </div>
@@ -122,6 +124,15 @@ export default function CatalogoPage() {
           sensorial no Colégio Carneirinhos.
         </p>
         <CollectionGrid books={janelasParaOMundo} startAt={8} />
+      </section>
+
+      <section className="collection-section collection-yellow">
+        <p className="eyebrow eyebrow-dark">Coleção Protagonistas do Amanhã</p>
+        <h2>Três histórias sobre juventude e descoberta.</h2>
+        <p className="collection-description">
+          Uma coleção dedicada a trajetórias, talentos e conquistas que merecem ser conhecidos.
+        </p>
+        <CollectionGrid books={protagonistasDoAmanha} startAt={13} />
       </section>
     </SubpageShell>
   );

@@ -1,7 +1,8 @@
 import { SubpageShell } from "../../components/SiteChrome";
 import { books, getBookBySlug } from "../books";
+import Link from "next/link";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return books.map((book) => ({ slug: book.slug }));
 }
 
@@ -20,7 +21,7 @@ export default function BookDetailPage({
         intro="Volte ao catálogo para conhecer todas as histórias da ROEL Editora."
       >
         <section className="book-detail book-detail-missing">
-          <a className="button button-dark" href="/catalogo">Voltar ao catálogo →</a>
+          <Link className="button button-dark" href="/catalogo">Voltar ao catálogo →</Link>
         </section>
       </SubpageShell>
     );
@@ -35,7 +36,7 @@ export default function BookDetailPage({
       <section className={`book-detail book-detail-${book.tone}`}>
         <div className="book-detail-cover">
           {book.coverImage ? (
-            <img src={book.coverImage} alt={`Capa de ${book.title}`} />
+            <img src={book.coverImage} alt={`Capa de ${book.title}`} loading="lazy" />
           ) : (
             <div className="book-detail-cover-placeholder">
               <span>{book.theme}</span>
@@ -57,11 +58,11 @@ export default function BookDetailPage({
 
           <div className="book-detail-meta">
             <div>
-              <span> Coleção</span>
+              <span>Coleção</span>
               <strong>{book.collection}</strong>
             </div>
             <div>
-              <span> Tema</span>
+              <span>Tema</span>
               <strong>{book.theme}</strong>
             </div>
           </div>
@@ -69,13 +70,13 @@ export default function BookDetailPage({
           <div className="book-detail-actions">
             <a
               className="button button-dark"
-              href={`mailto:contato@roeleditora.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+              href={`mailto:contato@editoraroel.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
             >
               Quero este livro →
             </a>
-            <a className="button button-outline" href="/catalogo">
+            <Link className="button button-outline" href="/catalogo">
               Voltar ao catálogo
-            </a>
+            </Link>
           </div>
         </div>
       </section>
