@@ -32,13 +32,13 @@ export default function QuemSomosPage() {
     <SubpageShell
       eyebrow="Quem Somos"
       title="Literatura e educação como ferramentas de transformação."
-      intro="A ROEL Editora nasceu da parceria entre Roberto Araújo e Elton Henrique."
+      intro="A Editora Faber nasceu da parceria entre Roberto Araújo e Elton Henrique."
     >
       <section className="content-section prose-grid">
         <h2>Uma editora completa</h2>
         <div className="prose-stack">
           <p>
-            A <strong>ROEL Editora</strong> nasceu da parceria entre Roberto
+            A <strong>Editora Faber</strong> nasceu da parceria entre Roberto
             Araújo e Elton Henrique, dois empreendedores com vivências
             complementares e um propósito em comum: transformar a literatura e
             a educação em ferramentas de inclusão, desenvolvimento humano e
@@ -53,7 +53,7 @@ export default function QuemSomosPage() {
             completa.
           </p>
           <p>
-            A ROEL Editora atua em todos os segmentos: ficção e não ficção,
+            A Editora Faber atua em todos os segmentos: ficção e não ficção,
             literatura infantojuvenil, obras paradidáticas, biografias e
             memórias, livros técnicos e científicos, autoajuda e desenvolvimento
             pessoal. Não nos limitamos a gêneros ou nichos. Publicamos livros
@@ -133,7 +133,7 @@ export default function QuemSomosPage() {
         <p className="eyebrow eyebrow-dark">Impacto Social</p>
         <h2 id="impact-title">Compromisso Social e Legado ODS</h2>
         <p>
-          A ROEL Editora é uma empresa privada com compromisso social. Parte do
+          A Editora Faber é uma empresa privada com compromisso social. Parte do
           valor arrecadado com as vendas é destinada ao IRA INTEGRA TEA,
           instituição que presidimos e que foi uma das 1.200 organizações
           selecionadas para o Selo ODS Brasil 2026, integrante do legado da
@@ -141,7 +141,7 @@ export default function QuemSomosPage() {
         </p>
         <p>
           Isso significa que cada livro adquirido, cada serviço contratado e
-          cada parceria firmada com a ROEL Editora gera impacto social real,
+          cada parceria firmada com a Editora Faber gera impacto social real,
           reconhecido internacionalmente. Não vendemos apenas livros. Entregamos
           ferramentas de transformação.
         </p>

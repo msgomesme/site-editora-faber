@@ -1,7 +1,7 @@
 import { SubpageShell } from "../components/SiteChrome";
 
 const codeIndex = [
-  ["01", "Sobre a ROEL Editora", "sobre-roel"],
+  ["01", "Sobre a Editora Faber", "sobre-faber"],
   ["02", "Propósito e valores", "proposito-valores"],
   ["03", "Sobre este Código de Conduta", "sobre-codigo"],
   ["04", "Integridade nas negociações", "negociacoes"],
@@ -20,7 +20,7 @@ export default function CompliancePage() {
     <SubpageShell
       eyebrow="Transparência e governança"
       title="Compliance"
-      intro="Princípios, compromissos e canais para uma relação ética, transparente e responsável com todos os públicos da ROEL Editora."
+      intro="Princípios, compromissos e canais para uma relação ética, transparente e responsável com todos os públicos da Editora Faber."
     >
       <section className="legal-section legal-section-paper" id="carta-presidente">
         <div className="legal-prose legal-prose-narrow">
@@ -28,7 +28,7 @@ export default function CompliancePage() {
           <h2>Um compromisso que vai além do mercado editorial.</h2>
           <p>Aos nossos autores, parceiros, colaboradores e leitores,</p>
           <p>
-            A ROEL Editora nasceu de um propósito que vai além do mercado
+            A Editora Faber nasceu de um propósito que vai além do mercado
             editorial. Fundada por nós, Roberto Araújo e Elton Henrique,
             presidentes do IRA INTEGRA TEA, a editora foi criada para preencher
             uma lacuna essencial na literatura brasileira: a oferta de obras
@@ -38,7 +38,7 @@ export default function CompliancePage() {
           </p>
           <p>
             Desde o primeiro título, estabelecemos um compromisso que não
-            negociamos: toda obra publicada pela ROEL Editora deve respeitar e
+            negociamos: toda obra publicada pela Editora Faber deve respeitar e
             promover a inclusão, a diversidade e a ética. Este Código de
             Conduta é a materialização desse compromisso. Ele não é apenas um
             documento formal, é o reflexo dos valores que nos guiam como
@@ -54,7 +54,7 @@ export default function CompliancePage() {
           </p>
           <p>
             Convidamos cada um de vocês a ler, compreender e incorporar estes
-            princípios. A ROEL Editora é uma empresa privada com compromisso
+            princípios. A Editora Faber é uma empresa privada com compromisso
             social, e parte do valor arrecadado com nossas obras é destinada ao
             IRA INTEGRA TEA, fortalecendo o atendimento a autistas e familiares
             em situação de vulnerabilidade. Este código é mais uma ferramenta
@@ -62,18 +62,18 @@ export default function CompliancePage() {
             mantenha sólido.
           </p>
           <p>
-            Contamos com o engajamento de todos para fazer da ROEL Editora uma
+            Contamos com o engajamento de todos para fazer da Editora Faber uma
             referência não apenas em qualidade editorial, mas também em
             conduta ética e responsabilidade social.
           </p>
-          <div className="legal-signatures" aria-label="Presidentes da ROEL Editora">
+          <div className="legal-signatures" aria-label="Presidentes da Editora Faber">
             <div>
               <strong>Roberto Araújo</strong>
-              <span>Presidente ROEL Editora</span>
+              <span>Presidente Editora Faber</span>
             </div>
             <div>
               <strong>Elton Henrique</strong>
-              <span>Presidente ROEL Editora</span>
+              <span>Presidente Editora Faber</span>
             </div>
           </div>
         </div>
@@ -97,13 +97,13 @@ export default function CompliancePage() {
           </aside>
 
           <div className="legal-prose legal-prose-light">
-            <p className="eyebrow eyebrow-light">Código de Conduta ROEL Editora</p>
+            <p className="eyebrow eyebrow-light">Código de Conduta Editora Faber</p>
             <h2>Integridade como prática diária.</h2>
 
-            <article id="sobre-roel">
-              <h3>1. Sobre a ROEL Editora</h3>
+            <article id="sobre-faber">
+              <h3>1. Sobre a Editora Faber</h3>
               <p>
-                A ROEL Editora é uma empresa privada com compromisso social,
+                A Editora Faber é uma empresa privada com compromisso social,
                 fundada pelos presidentes do IRA INTEGRA TEA, Roberto Araújo e
                 Elton Henrique. Atuamos como editora completa em todos os
                 segmentos literários, com serviços editoriais e gráficos para
@@ -127,7 +127,7 @@ export default function CompliancePage() {
               <p>
                 Este Código de Conduta estabelece as diretrizes éticas e de
                 comportamento que orientam todos os colaboradores, autores,
-                parceiros, fornecedores e prestadores de serviço da ROEL
+                parceiros, fornecedores e prestadores de serviço da Faber
                 Editora. Seu cumprimento é obrigatório e inegociável.
               </p>
             </article>
@@ -135,7 +135,7 @@ export default function CompliancePage() {
             <article id="negociacoes">
               <h3>4. Integridade nas negociações</h3>
               <p>
-                Todas as negociações da ROEL Editora devem ser pautadas pela
+                Todas as negociações da Editora Faber devem ser pautadas pela
                 transparência, honestidade e boa-fé. É vedado oferecer ou
                 receber vantagens indevidas, brindes excessivos ou qualquer
                 forma de benefício que possa influenciar decisões comerciais.
@@ -146,7 +146,7 @@ export default function CompliancePage() {
 
             <article id="compromissos">
               <h3>5. Compromissos definidos</h3>
-              <p>A ROEL Editora se compromete a:</p>
+              <p>A Editora Faber se compromete a:</p>
               <ul>
                 <li>Cumprir rigorosamente a legislação brasileira, em especial as Leis nº 12.764/2012 e nº 13.146/2015.</li>
                 <li>Respeitar os direitos autorais e de propriedade intelectual.</li>
@@ -159,7 +159,7 @@ export default function CompliancePage() {
             <article id="ambiente-trabalho">
               <h3>6. Recomendações para o ambiente de trabalho</h3>
               <p>
-                O ambiente de trabalho na ROEL Editora deve ser pautado pelo
+                O ambiente de trabalho na Editora Faber deve ser pautado pelo
                 respeito mútuo, pela colaboração e pela valorização da
                 diversidade. Não será tolerado qualquer tipo de assédio moral,
                 sexual ou discriminação por raça, gênero, religião, orientação
@@ -170,7 +170,7 @@ export default function CompliancePage() {
             <article id="setores-publicos">
               <h3>7. Relacionamento com setores públicos</h3>
               <p>
-                A ROEL Editora mantém relacionamento com órgãos públicos
+                A Editora Faber mantém relacionamento com órgãos públicos
                 exclusivamente por meio de processos transparentes e legalmente
                 previstos, como licitações, editais públicos (PNLD, licitações
                 estaduais e municipais) e convênios. É vedada qualquer prática
@@ -181,7 +181,7 @@ export default function CompliancePage() {
 
             <article id="diretrizes-autores">
               <h3>8. Diretrizes para autores</h3>
-              <p>Todo autor que publica com a ROEL Editora deve:</p>
+              <p>Todo autor que publica com a Editora Faber deve:</p>
               <ul>
                 <li>Respeitar os valores de inclusão e diversidade da editora.</li>
                 <li>Garantir a originalidade de sua obra e a inexistência de plágio.</li>
@@ -205,7 +205,7 @@ export default function CompliancePage() {
             <article id="canal-integridade">
               <h3>11. Canal de Integridade</h3>
               <p>
-                A ROEL Editora mantém um Canal de Integridade permanente,
+                A Editora Faber mantém um Canal de Integridade permanente,
                 acessível a todos os colaboradores, autores, parceiros,
                 fornecedores e ao público em geral, para o recebimento de
                 denúncias, dúvidas e orientações relacionadas a condutas éticas e
@@ -232,7 +232,7 @@ export default function CompliancePage() {
             <p className="eyebrow eyebrow-dark">11 · Canal de Integridade</p>
             <h2>Fale com o Comitê de Integridade.</h2>
             <p>
-              A ROEL Editora mantém um Canal de Integridade permanente,
+              A Editora Faber mantém um Canal de Integridade permanente,
               acessível a todos os colaboradores, autores, parceiros,
               fornecedores e ao público em geral, para o recebimento de
               denúncias, dúvidas e orientações relacionadas a condutas éticas e
@@ -247,7 +247,7 @@ export default function CompliancePage() {
               <li>Desvios de recursos ou materiais.</li>
               <li>Assédio moral, sexual ou discriminação.</li>
               <li>Irregularidades em processos licitatórios e contratos públicos.</li>
-              <li>Qualquer outra situação que contrarie os princípios da ROEL Editora.</li>
+              <li>Qualquer outra situação que contrarie os princípios da Editora Faber.</li>
             </ul>
             <h3>Como funciona</h3>
             <p>
@@ -264,7 +264,7 @@ export default function CompliancePage() {
               <li><strong>Registro documental:</strong> cada denúncia recebe um número de protocolo e é documentada integralmente.</li>
             </ul>
             <p className="legal-contact">
-              E-mail: <a href="mailto:integridade@editoraroel.com.br">integridade@editoraroel.com.br</a>
+              E-mail: <a href="mailto:integridade@editorafaber.com.br">integridade@editorafaber.com.br</a>
             </p>
             <p>
               O Comitê de Integridade tem até 30 dias corridos para concluir a
@@ -275,7 +275,7 @@ export default function CompliancePage() {
 
           <form
             className="integrity-form"
-            action="mailto:integridade@editoraroel.com.br"
+            action="mailto:integridade@editorafaber.com.br"
             method="post"
             encType="multipart/form-data"
           >

@@ -2,26 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.editoraroel.com.br"),
-  title: "ROEL Editora | Literatura que acolhe",
+  metadataBase: new URL("https://www.editorafaber.com.br"),
+  title: "Editora Faber | Literatura que acolhe",
   description:
     "Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas.",
   icons: {
-    icon: "/logo-roel-transparent-cropped.png",
-    shortcut: "/logo-roel-transparent-cropped.png",
+    icon: "/logo-faber-transparent.png",
+    shortcut: "/logo-faber-transparent.png",
   },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.editoraroel.com.br",
-    siteName: "Editora ROEL",
+    url: "https://www.editorafaber.com.br",
+    siteName: "Editora Faber",
     title: "Literatura que acolhe. Histórias que transformam.",
     description:
       "Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ROEL Editora | Literatura que acolhe",
+    title: "Editora Faber | Literatura que acolhe",
     description:
       "Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas.",
   },

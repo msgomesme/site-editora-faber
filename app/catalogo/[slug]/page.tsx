@@ -6,19 +6,20 @@ export async function generateStaticParams() {
   return books.map((book) => ({ slug: book.slug }));
 }
 
-export default function BookDetailPage({
+export default async function BookDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const book = getBookBySlug(params.slug);
+  const resolvedParams = await params;
+  const book = getBookBySlug(resolvedParams.slug);
 
   if (!book) {
     return (
       <SubpageShell
         eyebrow="Catálogo"
         title="Livro não encontrado."
-        intro="Volte ao catálogo para conhecer todas as histórias da ROEL Editora."
+        intro="Volte ao catálogo para conhecer todas as histórias da Editora Faber."
       >
         <section className="book-detail book-detail-missing">
           <Link className="button button-dark" href="/catalogo">Voltar ao catálogo →</Link>
@@ -70,7 +71,7 @@ export default function BookDetailPage({
           <div className="book-detail-actions">
             <a
               className="button button-dark"
-              href={`mailto:contato@editoraroel.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+              href={`mailto:contato@editorafaber.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
             >
               Quero este livro →
             </a>

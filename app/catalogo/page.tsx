@@ -47,7 +47,7 @@ function CollectionGrid({
             </Link>
             <a
               className="catalog-buy"
-              href={`mailto:contato@editoraroel.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
+              href={`mailto:contato@editorafaber.com.br?subject=${encodeURIComponent(`Quero comprar: ${book.title}`)}`}
               aria-label={`Comprar o livro ${book.title}`}
             >
               Comprar
@@ -73,29 +73,30 @@ export default function CatalogoPage() {
           <article>
             <h3>Coleção Mundo Neurodiverso</h3>
             <p>
-              8 livros sobre neurodiversidade. Cada livro acompanha o Roteiro do
-              Pertencimento. Oito histórias. Oito protagonistas. Uma única
-              missão: mostrar que cada criança tem uma maneira única de
-              aprender, sentir, pensar e enxergar o mundo.
+              Oito livros. Oito jeitos completamente diferentes de estar no mundo. Porque, e isso é importante, não existe uma única forma de aprender, de sentir, de processar as coisas. A gente insiste em colocar todo mundo no mesmo molde e depois fica surpreso quando alguém não cabe.
+            </p>
+            <p>
+              Cada história tem um protagonista. Cada protagonista tem seu próprio ritmo, sua própria lógica. E todos eles seguem o Roteiro do Pertencimento, tipo um mapa que diz: "Você não está quebrado. Você está só funcionando diferente." Porque, real, essa é a verdade que a maioria das crianças neurodiversas nunca ouve.
             </p>
           </article>
           <article>
             <h3>Coleção Janelas para o Mundo</h3>
             <p>
-              5 livros sobre deficiência visual, surdez, deficiência física,
-              amputação e paralisia cerebral. Cada livro acompanha o Roteiro do
-              Pertencimento. Cinco histórias. Cinco protagonistas. Uma única
-              missão: mostrar que nenhuma limitação define o potencial de uma
-              criança.
+              Cinco livros. Cinco histórias. Cinco crianças que não cabem nas
+              caixinhas que a gente tenta colocar elas. Um acompanha o outro, o
+              Roteiro do Pertencimento, como se fosse um mapa para mostrar que
+              deficiência visual, surdez, deficiência física, amputação,
+              paralisia cerebral… nenhuma dessas deficiências é o final da
+              história. É só o começo.
             </p>
           </article>
           <article>
             <h3>Coleção Protagonistas do Amanhã</h3>
             <p>
-              3 livros sobre juventude e descoberta. Cada livro acompanha o
-              Roteiro do Pertencimento. Três histórias. Três protagonistas. Uma
-              única missão: mostrar que cada jovem tem o poder de transformar
-              sua própria história.
+              Três livros. Três vidas. Três momentos em que alguém jovem descobre que a história deles não é um script pronto que outras pessoas escreveram.
+            </p>
+            <p>
+              Cada um segue o Roteiro do Pertencimento, aquele fio condutor que conecta as narrativas. E a missão é simples, mas radical: mostrar que transformar sua própria história não é coisa de herói de filme. É coisa de quem acorda um dia e decide que quer ser diferente do que esperavam dela.
             </p>
           </article>
         </div>

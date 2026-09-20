@@ -11,7 +11,7 @@ const editorialServices = [
   },
   {
     title: "Selo Editorial",
-    text: "Marca própria dentro da ROEL para parceiros.",
+    text: "Marca própria dentro da Faber para parceiros.",
   },
   {
     title: "Impressão por Contrato",
@@ -86,8 +86,8 @@ export default function ServicosPage() {
           Participamos de licitações estaduais e municipais de material
           paradidático e serviços gráficos.
         </h2>
-        <a className="button section-button" href="mailto:licitacoes@editoraroel.com.br">
-          licitacoes@editoraroel.com.br
+        <a className="button section-button" href="mailto:licitacoes@editorafaber.com.br">
+          licitacoes@editorafaber.com.br
         </a>
       </section>
     </SubpageShell>

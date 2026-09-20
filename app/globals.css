@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Outfit ROEL";
+  font-family: "Outfit Faber";
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "Inter ROEL";
+  font-family: "Inter Faber";
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "JetBrains Mono ROEL";
+  font-family: "JetBrains Mono Faber";
   font-style: normal;
   font-weight: 100 800;
   font-display: swap;
@@ -35,12 +35,12 @@
   --white: #fffdf8;
   --ink-soft: #586174;
   --line: rgba(6, 16, 40, 0.18);
-  --font-heading: "Outfit ROEL", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  --font-heading: "Outfit Faber", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
-  --font-body: "Inter ROEL", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  --font-body: "Inter Faber", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   --font-serif: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: "JetBrains Mono ROEL", ui-monospace, SFMono-Regular, Menlo, Monaco,
+  --font-mono: "JetBrains Mono Faber", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, monospace;
 }
 
@@ -63,8 +63,18 @@ body {
   font-size: 18px;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: clip;
   max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.03em;
 }
 
 a {
@@ -263,11 +273,18 @@ textarea:focus-visible {
   line-height: 1.08;
   margin: 0;
   max-width: 1240px;
+  overflow-wrap: break-word;
 }
 
 .hero h1 .hero-line {
   display: block;
   white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .hero h1 .hero-line {
+    white-space: normal;
+  }
 }
 
 .hero-intro {
@@ -1075,6 +1092,13 @@ footer {
   white-space: nowrap;
 }
 
+.at-symbol {
+  font-family: var(--font-body);
+  font-weight: inherit;
+  font-size: 1em;
+  margin: 0;
+}
+
 .whatsapp:hover {
   background: var(--light);
   border-color: var(--light);
@@ -1543,6 +1567,88 @@ blockquote,
 
 .collection-intro .split-panels {
   margin-top: 64px;
+}
+
+.collection-summary-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 64px;
+}
+
+.collection-summary-grid article {
+  background: var(--white);
+  padding: clamp(24px, 3vw, 40px);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.collection-summary-grid article:nth-child(2) {
+  background: var(--pink);
+}
+
+.collection-summary-grid article:nth-child(3) {
+  background: var(--light);
+}
+
+.collection-summary-grid article h3 {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  margin: 0 0 20px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.collection-summary-grid article p {
+  margin-bottom: 12px;
+}
+
+.collection-summary-grid article p:last-child {
+  margin-bottom: 0;
+}
+
+.collection-summary-grid article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.collection-summary-grid article ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95rem;
+}
+
+.collection-summary-grid article ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
+
+.collection-summary-grid article:nth-child(2) ul li::before {
+  color: var(--night);
+}
+
+.collection-summary-grid article:nth-child(3) ul li::before {
+  color: var(--night);
+}
+
+.collection-summary-grid article .placeholder-text {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: rgba(6, 16, 40, 0.6);
+  background: rgba(6, 16, 40, 0.05);
+  padding: 12px;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .collection-summary-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .collection-section h2 {
@@ -2329,7 +2435,7 @@ blockquote,
 }
 
 .announcement-track {
-  animation: roel-marquee 34s linear infinite;
+  animation: faber-marquee 34s linear infinite;
   display: flex;
   min-width: max-content;
   width: max-content;
@@ -2353,7 +2459,7 @@ blockquote,
   color: var(--sage);
 }
 
-@keyframes roel-marquee {
+@keyframes faber-marquee {
   to {
     transform: translateX(-50%);
   }
@@ -2849,14 +2955,14 @@ button,
 }
 
 .letter-cloud span {
-  animation: roel-letter-wave 7s ease-in-out infinite;
+  animation: faber-letter-wave 7s ease-in-out infinite;
   display: block;
   transform-origin: left center;
   white-space: nowrap;
 }
 
 .letter-cloud-right span {
-  animation-name: roel-letter-wave-right;
+  animation-name: faber-letter-wave-right;
   text-align: right;
   transform-origin: right center;
 }
@@ -2873,7 +2979,7 @@ button,
   z-index: 1;
 }
 
-@keyframes roel-letter-wave {
+@keyframes faber-letter-wave {
   0%,
   100% {
     opacity: 0.35;
@@ -2886,7 +2992,7 @@ button,
   }
 }
 
-@keyframes roel-letter-wave-right {
+@keyframes faber-letter-wave-right {
   0%,
   100% {
     opacity: 0.35;
@@ -3085,7 +3191,7 @@ button,
 }
 
 .book-carousel .book-grid {
-  animation: roel-books-loop 42s linear infinite;
+  animation: faber-books-loop 42s linear infinite;
   display: flex;
   gap: 0;
   margin: 0;
@@ -3113,7 +3219,7 @@ button,
   animation-play-state: paused;
 }
 
-@keyframes roel-books-loop {
+@keyframes faber-books-loop {
   to {
     transform: translateX(-50%);
   }

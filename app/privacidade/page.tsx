@@ -45,7 +45,7 @@ export default function PrivacidadePage() {
             <article id="introducao">
               <h2>1. Introdução</h2>
               <p>
-                A ROEL Editora é uma empresa privada com compromisso social,
+                A Editora Faber é uma empresa privada com compromisso social,
                 fundada pelos presidentes do IRA INTEGRA TEA, Roberto Araújo e
                 Elton Henrique. A proteção dos seus dados pessoais é uma
                 prioridade para nós. Esta Política de Privacidade descreve como
@@ -59,7 +59,7 @@ export default function PrivacidadePage() {
               <h2>2. O que é esta Política?</h2>
               <p>
                 Esta Política estabelece as regras sobre o tratamento de dados
-                pessoais coletados por meio do site da ROEL Editora e de suas
+                pessoais coletados por meio do site da Editora Faber e de suas
                 plataformas digitais. Ao acessar nosso site, você concorda com
                 os termos aqui descritos.
               </p>
@@ -68,7 +68,7 @@ export default function PrivacidadePage() {
             <article id="principios-lgpd">
               <h2>3. Princípios da LGPD</h2>
               <p>
-                A ROEL Editora se compromete a seguir os princípios da Lei Geral
+                A Editora Faber se compromete a seguir os princípios da Lei Geral
                 de Proteção de Dados (Lei nº 13.709/2018):
               </p>
               <ul>
@@ -100,23 +100,23 @@ export default function PrivacidadePage() {
             <article id="controladora">
               <h2>5. Informações sobre a Controladora e o Encarregado de Dados</h2>
               <div className="legal-contact-card">
-                <p><strong>Controladora:</strong> ROEL Editora</p>
-                <p><strong>E-mail Institucional:</strong> <a href="mailto:contato@editoraroel.com.br">contato@editoraroel.com.br</a></p>
-                <p><strong>Encarregado de Dados (DPO):</strong> <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a></p>
+                <p><strong>Controladora:</strong> Editora Faber</p>
+                <p><strong>E-mail Institucional:</strong> <a href="mailto:contato@editorafaber.com.br">contato@editorafaber.com.br</a></p>
+                <p><strong>Encarregado de Dados (DPO):</strong> <a href="mailto:privacidade@editorafaber.com.br">privacidade@editorafaber.com.br</a></p>
               </div>
             </article>
 
             <article id="aplicacao">
               <h2>6. A quem se aplica esta Política</h2>
               <p>
-                Aplica-se a todas as pessoas que acessam o site da ROEL Editora,
+                Aplica-se a todas as pessoas que acessam o site da Editora Faber,
                 utilizam seus serviços, adquirem seus produtos ou interagem com
                 suas plataformas digitais.
               </p>
             </article>
 
             <article id="dados-coletados">
-              <h2>7. Dados coletados e tratados pela ROEL Editora</h2>
+              <h2>7. Dados coletados e tratados pela Editora Faber</h2>
               <div className="legal-table-wrap">
                 <table className="legal-table">
                   <thead>
@@ -135,7 +135,7 @@ export default function PrivacidadePage() {
             <article id="compartilhamento">
               <h2>8. Com quem compartilhamos as informações</h2>
               <p>
-                A ROEL Editora compartilha dados apenas quando necessário para a
+                A Editora Faber compartilha dados apenas quando necessário para a
                 prestação dos serviços, sempre com proteção contratual:
               </p>
               <ul>
@@ -143,7 +143,7 @@ export default function PrivacidadePage() {
                 <li><strong>Instituições e órgãos públicos:</strong> quando exigido por lei, ordem judicial ou para cumprimento de obrigações regulatórias.</li>
                 <li><strong>Parceiros comerciais:</strong> mediante autorização expressa do titular.</li>
               </ul>
-              <p>A ROEL Editora não comercializa dados pessoais em hipótese alguma.</p>
+              <p>A Editora Faber não comercializa dados pessoais em hipótese alguma.</p>
             </article>
 
             <article id="protecao">
@@ -162,7 +162,7 @@ export default function PrivacidadePage() {
               <h2>10. Períodos de retenção dos dados pessoais</h2>
               <p>Seus dados serão mantidos pelo período necessário para cumprir a finalidade para a qual foram coletados, respeitando:</p>
               <ul>
-                <li>A duração do seu relacionamento com a ROEL Editora.</li>
+                <li>A duração do seu relacionamento com a Editora Faber.</li>
                 <li>Os prazos estabelecidos por leis aplicáveis, como o Marco Civil da Internet.</li>
                 <li>A necessidade de cumprimento de obrigações legais ou contratuais.</li>
               </ul>
@@ -188,7 +188,7 @@ export default function PrivacidadePage() {
             <article id="transferencia">
               <h2>12. Transferência internacional de dados</h2>
               <p>
-                A ROEL Editora não realiza transferência internacional de dados
+                A Editora Faber não realiza transferência internacional de dados
                 pessoais como prática regular. Caso venha a ocorrer, será
                 realizada em conformidade com a LGPD, para países com nível
                 adequado de proteção ou com garantias contratuais específicas.
@@ -207,7 +207,7 @@ export default function PrivacidadePage() {
                 <li>Revogar o consentimento a qualquer tempo.</li>
                 <li>Ser informado sobre o compartilhamento com terceiros.</li>
               </ul>
-              <p>Para exercer seus direitos, entre em contato pelo e-mail: <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a></p>
+              <p>Para exercer seus direitos, entre em contato pelo e-mail: <a href="mailto:privacidade@editorafaber.com.br">privacidade@editorafaber.com.br</a></p>
             </article>
 
             <article id="consideracoes">
@@ -220,7 +220,7 @@ export default function PrivacidadePage() {
               </p>
               <p><strong>Última atualização:</strong> julho de 2026</p>
               <p>
-                Em caso de dúvidas, entre em contato pelo e-mail: <a href="mailto:privacidade@editoraroel.com.br">privacidade@editoraroel.com.br</a>
+                Em caso de dúvidas, entre em contato pelo e-mail: <a href="mailto:privacidade@editorafaber.com.br">privacidade@editorafaber.com.br</a>
               </p>
             </article>
           </div>

@@ -51,3 +51,4 @@ next-env.d.ts
 /export-cpanel*/
 /Editora-ROEL-cPanel*.zip
 *.zip
+._*

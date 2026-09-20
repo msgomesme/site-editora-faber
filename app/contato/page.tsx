@@ -35,11 +35,11 @@ const faq = [
   ],
   [
     "Comprar ajuda o IRA?",
-    "Sim. A ROEL é um empreendimento social.",
+    "Sim. A Faber é um empreendimento social.",
   ],
   [
     "Participam de licitações?",
-    "Sim. E-mail: licitacoes@editoraroel.com.br",
+    "Sim. E-mail: licitacoes@editorafaber.com.br",
   ],
   [
     "Publicam biografias?",
@@ -51,8 +51,8 @@ export default function ContatoPage() {
   return (
     <SubpageShell
       eyebrow="Contato"
-      title="Fale com a ROEL Editora."
-      intro="contato@editoraroel.com.br"
+      title="Fale com a Editora Faber."
+      intro="contato@editorafaber.com.br"
     >
       <section className="contact-section" aria-labelledby="contact-title">
         <form
@@ -65,7 +65,7 @@ export default function ContatoPage() {
             const subject = data.get("subject") || "Contato pelo site";
             const message = data.get("message") || "";
             const body = `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`;
-            window.location.href = `mailto:contato@editoraroel.com.br?subject=${encodeURIComponent(String(subject))}&body=${encodeURIComponent(body)}`;
+            window.location.href = `mailto:contato@editorafaber.com.br?subject=${encodeURIComponent(String(subject))}&body=${encodeURIComponent(body)}`;
           }}
         >
           <label>

@@ -26,7 +26,7 @@ const services = [
   {
     title: "Selo Editorial",
     description:
-      "Marca própria dentro da ROEL para parceiros que desejam publicar com estrutura profissional.",
+      "Marca própria dentro da Faber para parceiros que desejam publicar com estrutura profissional.",
   },
 ];
 
@@ -161,8 +161,8 @@ export default function Home() {
       </div>
 
       <header className="site-header">
-        <Link className="brand-logo" href="#inicio" aria-label="ROEL Editora — início">
-          <img src="/logo-roel-transparent-cropped.png" alt="ROEL Editora" />
+        <Link className="brand-logo" href="#inicio" aria-label="Editora Faber — início">
+          <img src="/logo-faber-transparent.png" alt="Editora Faber" />
         </Link>
         <nav aria-label="Navegação principal">
           <Link href="#inicio">INÍCIO</Link>
@@ -181,14 +181,14 @@ export default function Home() {
         <div className="hero-copy" id="conteudo">
           <p className="eyebrow">
             <span />
-            ROEL EDITORA
+            EDITORA FABER
           </p>
           <h1>
             <span className="hero-line">Literatura que acolhe.</span>
             <span className="hero-line">Histórias que transformam.</span>
           </h1>
           <p className="hero-official-subtitle">
-            A ROEL Editora nasce da parceria entre Roberto Araújo e Elton
+            A Editora Faber nasce da parceria entre Roberto Araújo e Elton
             Henrique para publicar livros que formam cidadãos, acolhem famílias,
             inspiram leitores e transformam escolas.
           </p>
@@ -198,7 +198,7 @@ export default function Home() {
             </Link>
             <a
               className="button button-hero-white"
-              href="mailto:contato@editoraroel.com.br?subject=Quero ser parceiro"
+              href="mailto:contato@editorafaber.com.br?subject=Quero ser parceiro"
             >
               SEJA NOSSO PARCEIRO
             </a>
@@ -213,7 +213,7 @@ export default function Home() {
         </div>
         <div className="home-who-copy">
           <p>
-            A ROEL Editora é uma editora completa, fundada pelos presidentes do
+            A Editora Faber é uma editora completa, fundada pelos presidentes do
             IRA INTEGRA TEA, Roberto Araújo e Elton Henrique. Atuamos em todos os
             segmentos: ficção e não ficção, literatura infantojuvenil, obras
             paradidáticas, biografias e memórias, livros técnicos e científicos,
@@ -233,7 +233,7 @@ export default function Home() {
             <h2 id="catalog-title">CATÁLOGO EM DESTAQUE</h2>
           </div>
           <p>
-            Uma seleção de seis livros para conhecer o universo da ROEL Editora.
+            Uma seleção de seis livros para conhecer o universo da Editora Faber.
           </p>
         </div>
 
@@ -289,7 +289,7 @@ export default function Home() {
         </div>
         <div>
           <p>
-            A ROEL Editora publica biografias e memórias com todo o cuidado
+            A Editora Faber publica biografias e memórias com todo o cuidado
             editorial que a sua trajetória merece. Do original ao livro impresso.
           </p>
           <Link className="button section-button" href="/servicos#biografias">
@@ -310,7 +310,7 @@ export default function Home() {
       <section className="blog-home" id="blog" aria-labelledby="blog-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow eyebrow-dark">Conteúdo ROEL</p>
+            <p className="eyebrow eyebrow-dark">Conteúdo Faber</p>
             <h2 id="blog-title">Blog</h2>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function Home() {
       </section>
 
       <section className="newsletter" aria-labelledby="news-title">
-        <p className="eyebrow eyebrow-dark">ROEL Editora</p>
+        <p className="eyebrow eyebrow-dark">Editora Faber</p>
         <h2 id="news-title">Newsletter</h2>
         <form
           onSubmit={(event) => {

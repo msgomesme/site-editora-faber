@@ -17,7 +17,7 @@ const partnersData = [
     title: "Uma educação mais inclusiva",
     content: (
       <p>
-        Na ROEL, acreditamos que toda escola pode ser um lugar de pertencimento. Oferecemos material paradidático com ficha pedagógica alinhada à BNCC, validado clinicamente pelo NAPE. Seus professores ganham tempo, seus alunos ganham acolhimento. Vamos construir juntos uma educação mais inclusiva?
+        Na Faber, acreditamos que toda escola pode ser um lugar de pertencimento. Oferecemos material paradidático com ficha pedagógica alinhada à BNCC, validado clinicamente pelo NAPE. Seus professores ganham tempo, seus alunos ganham acolhimento. Vamos construir juntos uma educação mais inclusiva?
       </p>
     ),
   },
@@ -37,7 +37,7 @@ const partnersData = [
     title: "Leve histórias para todo o Brasil",
     content: (
       <p>
-        Nosso catálogo tem um diferencial que o mercado reconhece: livros com selo de qualidade pedagógica e impacto social real. Queremos levar essas histórias para todo o Brasil. Se sua distribuidora busca um produto que vende por propósito, a ROEL é a parceira certa.
+        Nosso catálogo tem um diferencial que o mercado reconhece: livros com selo de qualidade pedagógica e impacto social real. Queremos levar essas histórias para todo o Brasil. Se sua distribuidora busca um produto que vende por propósito, a Faber é a parceira certa.
       </p>
     ),
   },
@@ -47,7 +47,7 @@ const partnersData = [
     title: "Uma casa para a sua obra",
     content: (
       <p>
-        Seu livro merece uma casa que acredite nele. Na ROEL, publicamos sem custo para o autor, com suporte editorial completo, revisão pedagógica pelo NAPE e distribuição em todo o país. Se sua obra tem alma e propósito, queremos conhecê-la.
+        Seu livro merece uma casa que acredite nele. Na Faber, publicamos sem custo para o autor, com suporte editorial completo, revisão pedagógica pelo NAPE e distribuição em todo o país. Se sua obra tem alma e propósito, queremos conhecê-la.
       </p>
     ),
   },
@@ -57,7 +57,7 @@ const partnersData = [
     title: "Dê vida às histórias",
     content: (
       <p>
-        Suas ilustrações podem dar rosto e cor a histórias que transformam vidas. Na ROEL, você encontra trabalho contínuo em coleções inteiras, fee justo por página e crédito em cada obra. Venha fazer parte do time que dá vida aos personagens da inclusão.
+        Suas ilustrações podem dar rosto e cor a histórias que transformam vidas. Na Faber, você encontra trabalho contínuo em coleções inteiras, fee justo por página e crédito em cada obra. Venha fazer parte do time que dá vida aos personagens da inclusão.
       </p>
     ),
   },
@@ -77,7 +77,7 @@ const partnersData = [
     title: "Apoio para o seu trabalho no consultório",
     content: (
       <p>
-        Os livros da ROEL são desenvolvidos com rigor clínico e pedagógico para apoiar seu trabalho no consultório. Cada obra vem com a Ficha Pertencer, um material de apoio pronto para usar com seus pacientes. Desconto profissional exclusivo para quem cuida.
+        Os livros da Faber são desenvolvidos com rigor clínico e pedagógico para apoiar seu trabalho no consultório. Cada obra vem com a Ficha Pertencer, um material de apoio pronto para usar com seus pacientes. Desconto profissional exclusivo para quem cuida.
       </p>
     ),
   },
@@ -87,7 +87,7 @@ const partnersData = [
     title: "Caminhando lado a lado com sua causa",
     content: (
       <p>
-        A ROEL nasceu dentro do IRA INTEGRA TEA e tem o terceiro setor no DNA. Queremos caminhar lado a lado com sua associação, oferecendo condições especiais e a oportunidade de validar conteúdos que representem sua causa. Juntos, somos mais fortes.
+        A Faber nasceu dentro do IRA INTEGRA TEA e tem o terceiro setor no DNA. Queremos caminhar lado a lado com sua associação, oferecendo condições especiais e a oportunidade de validar conteúdos que representem sua causa. Juntos, somos mais fortes.
       </p>
     ),
   },
@@ -146,7 +146,7 @@ export default function ParceirosPage() {
         </p>
         <a
           className="button button-dark"
-          href="mailto:contato@editoraroel.com.br?subject=Quero publicar um livro"
+          href="mailto:contato@editorafaber.com.br?subject=Quero publicar um livro"
         >
           Enviar original
         </a>

@@ -95,7 +95,7 @@ export default function BlogPage() {
               aprendizado significativo e desenvolvimento pleno.
             </p>
             <p>
-              Na ROEL Editora, acreditamos que a literatura é uma ponte poderosa
+              Na Editora Faber, acreditamos que a literatura é uma ponte poderosa
               para esse acolhimento. Nossos livros paradidáticos foram escritos
               para ajudar crianças, famílias e educadores a entenderem e
               celebrarem a neurodiversidade, porque toda história merece ser
@@ -185,7 +185,7 @@ export default function BlogPage() {
               apenas histórias, são ferramentas de pertencimento.
             </p>
             <p>
-              Na ROEL Editora, cada título paradidático é pensado para ser lido
+              Na Editora Faber, cada título paradidático é pensado para ser lido
               por todas as crianças da sala de aula, promovendo empatia,
               representatividade e acolhimento. Acreditamos que a educação
               inclusiva se constrói um livro de cada vez.
@@ -326,13 +326,13 @@ export default function BlogPage() {
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">04 · Lançamentos</p>
             <span className="summary-title" id="lancamentos-title">
-              Acompanhe as novidades da ROEL Editora
+              Acompanhe as novidades da Editora Faber
             </span>
           </summary>
 
           <div className="blog-post-body">
             <p>
-              A ROEL Editora está construindo um catálogo que nasce da
+              A Editora Faber está construindo um catálogo que nasce da
               experiência real de quem vive a neurodiversidade e a inclusão no
               dia a dia. Cada lançamento é pensado para levar às escolas, às
               famílias e aos leitores obras que educam, acolhem e transformam.
@@ -371,7 +371,7 @@ export default function BlogPage() {
 
             <h3>Como acompanhar</h3>
             <p>
-              O blog da ROEL Editora será o primeiro canal a anunciar cada novo
+              O blog da Editora Faber será o primeiro canal a anunciar cada novo
               lançamento, com informações sobre pré-venda, disponibilidade e
               eventos de lançamento. Também divulgaremos as obras por meio de
               parcerias com redes de ensino, secretarias de educação e
@@ -379,7 +379,7 @@ export default function BlogPage() {
             </p>
             <p>
               Para escolas e redes de ensino interessadas em adquirir os
-              títulos, a ROEL Editora participa de editais públicos (PNLD,
+              títulos, a Editora Faber participa de editais públicos (PNLD,
               licitações estaduais e municipais) e também atende pedidos
               diretos. Entre em contato pelo canal “Seja Nosso Parceiro” no
               site.
@@ -406,7 +406,7 @@ export default function BlogPage() {
 
           <div className="blog-post-body">
             <p>
-              A ROEL Editora é uma empresa privada com compromisso social. Parte
+              A Editora Faber é uma empresa privada com compromisso social. Parte
               do valor arrecadado com as vendas é destinada ao IRA INTEGRA TEA,
               instituição que presidimos e que foi uma das 1.200 organizações
               selecionadas para o Selo ODS Brasil 2026, integrante do legado da
@@ -414,7 +414,7 @@ export default function BlogPage() {
             </p>
             <p>
               Isso significa que cada livro adquirido, cada serviço contratado e
-              cada parceria firmada com a ROEL Editora gera impacto social real,
+              cada parceria firmada com a Editora Faber gera impacto social real,
               reconhecido internacionalmente. Não vendemos apenas livros.
               Entregamos ferramentas de transformação.
             </p>
@@ -429,14 +429,14 @@ export default function BlogPage() {
           <summary className="blog-post-header">
             <p className="eyebrow eyebrow-dark">06 · Bastidores</p>
             <span className="summary-title" id="bastidores-title">
-              Como nasce um livro na ROEL Editora
+              Como nasce um livro na Editora Faber
             </span>
           </summary>
 
           <div className="blog-post-body">
             <p>
               Você já se perguntou o que acontece antes de um livro chegar às
-              suas mãos? Na ROEL Editora, cada título percorre um caminho
+              suas mãos? Na Editora Faber, cada título percorre um caminho
               cuidadosamente planejado, que une sensibilidade humana, rigor
               pedagógico e excelência gráfica.
             </p>
@@ -473,7 +473,7 @@ export default function BlogPage() {
 
             <h3>O que está por vir</h3>
             <p>
-              A ROEL Editora está em plena expansão. A Coleção Mundo
+              A Editora Faber está em plena expansão. A Coleção Mundo
               Neurodiverso já está disponível com 8 títulos. A Coleção Janelas
               para o Mundo e a Coleção Protagonistas estão em desenvolvimento. E,
               em breve, novos anúncios virão por aqui.
