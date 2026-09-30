@@ -56,7 +56,7 @@ if (publicBase !== "/") {
   );
 }
 
-await writeFile(path.join(outputDir, "assets/site.css"), css, "utf8");
+await writeFile(path.join(outputDir, "assets/site-v2.css"), css, "utf8");
 
 for (const entry of await readdir(path.join(projectDir, "public"))) {
   await cp(
@@ -85,7 +85,7 @@ for (const route of routes) {
     .replace(/<link\b[^>]*rel=["']modulepreload["'][^>]*\/?>/gi, "")
     .replace(
       /<link\b[^>]*rel=["']stylesheet["'][^>]*\/?>/gi,
-      '<link rel="stylesheet" href="/assets/site.css"/>',
+      '<link rel="stylesheet" href="/assets/site-v2.css"/>',
     )
     .replace(/<meta\b[^>]*property=["']og:url["'][^>]*\/?>/gi, "")
     .replaceAll(previewOrigin, "")
@@ -95,7 +95,7 @@ for (const route of routes) {
     )
     .replace(
       "</body>",
-      '<script src="/assets/site.js" defer></script></body>',
+      '<script src="/assets/site-v2.js" defer></script></body>',
     );
 
   if (publicBase !== "/") {
@@ -195,14 +195,14 @@ Os formulários abrem o aplicativo de e-mail do visitante e direcionam as
 mensagens para contato@editorafaber.com.br.
 `;
 
-await writeFile(path.join(outputDir, "assets/site.js"), staticScript, "utf8");
+await writeFile(path.join(outputDir, "assets/site-v2.js"), staticScript, "utf8");
 await writeFile(path.join(outputDir, ".htaccess"), htaccess, "utf8");
 await writeFile(path.join(outputDir, "LEIA-ME.txt"), instructions, "utf8");
 
 for (const requiredPath of [
   "index.html",
-  "assets/site.css",
-  "assets/site.js",
+  "assets/site-v2.css",
+  "assets/site-v2.js",
   ".htaccess",
   "mockups/o-menino-que-via-o-mundo-diferente.png",
   "mockups/a-menina-dos-mil-pensamentos.png",
