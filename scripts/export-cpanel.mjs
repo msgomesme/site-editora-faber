@@ -38,7 +38,7 @@ await rm(outputDir, { recursive: true, force: true });
 await mkdir(path.join(outputDir, "assets"), { recursive: true });
 
 const assetFiles = await readdir(path.join(projectDir, "dist/client/assets"));
-const cssFile = assetFiles.find((file) => file.endsWith(".css"));
+const cssFile = assetFiles.find((file) => file.endsWith(".css") && !file.startsWith("._"));
 
 if (!cssFile) {
   throw new Error("O CSS compilado não foi encontrado.");
@@ -91,7 +91,7 @@ for (const route of routes) {
     .replaceAll(previewOrigin, "")
     .replace(
       "</head>",
-      '<meta name="generator" content="ROEL Editora — versão cPanel"/></head>',
+      '<meta name="generator" content="Editora FABER — versão cPanel"/></head>',
     )
     .replace(
       "</body>",
@@ -126,7 +126,7 @@ const staticScript = `document.addEventListener("submit", function (event) {
       String(data.get("message") || "")
     ].join("\\n");
     window.location.href =
-      "mailto:contato@editoraroel.com.br?subject=" +
+      "mailto:contato@editorafaber.com.br?subject=" +
       encodeURIComponent(assunto) +
       "&body=" +
       encodeURIComponent(corpo);
@@ -138,7 +138,7 @@ const staticScript = `document.addEventListener("submit", function (event) {
     var emailInput = form.querySelector('input[type="email"]');
     var email = emailInput ? emailInput.value : "";
     window.location.href =
-      "mailto:contato@editoraroel.com.br?subject=" +
+      "mailto:contato@editorafaber.com.br?subject=" +
       encodeURIComponent("Cadastro na newsletter") +
       "&body=" +
       encodeURIComponent("Quero assinar a newsletter com o e-mail: " + email);
@@ -182,7 +182,7 @@ DirectoryIndex index.html
 </IfModule>
 `;
 
-const instructions = `EDITORA ROEL — PACOTE PARA ${publicBase}
+const instructions = `EDITORA FABER — PACOTE PARA ${publicBase}
 
 1. Abra o Gerenciador de Arquivos do cPanel.
 2. Entre na pasta public_html${publicBase.replace(/\/$/, "")}.
@@ -192,7 +192,7 @@ const instructions = `EDITORA ROEL — PACOTE PARA ${publicBase}
 6. Atualize o site com Ctrl+F5 ou Cmd+Shift+R.
 
 Os formulários abrem o aplicativo de e-mail do visitante e direcionam as
-mensagens para contato@editoraroel.com.br.
+mensagens para contato@editorafaber.com.br.
 `;
 
 await writeFile(path.join(outputDir, "assets/site.js"), staticScript, "utf8");

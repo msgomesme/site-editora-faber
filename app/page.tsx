@@ -50,7 +50,7 @@ const blogCategorySlugs = [
 
 const letterFieldLines = Array.from({ length: 24 }, (_, index) => {
   const lines = [
-    "R O E L · L I T E R A T U R A · I N C L U S Ã O ·",
+    "F A B E R · L I T E R A T U R A · I N C L U S Ã O ·",
     "E D U C A Ç Ã O · C I D A D A N I A · H I S T Ó R I A S ·",
     "F A M Í L I A S · E S C O L A S · L E I T O R E S ·",
     "T R A N S F O R M A Ç Ã O · D I V E R S I D A D E ·",
