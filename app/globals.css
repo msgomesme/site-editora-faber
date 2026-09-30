@@ -4026,8 +4026,21 @@ button,
   margin-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
+.footer-developer a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+.footer-developer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
 .footer-developer img {
-  height: 24px;
+  height: 18px;
   width: auto;
   opacity: 0.6;
   transition: opacity 180ms ease;
