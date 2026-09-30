@@ -199,6 +199,9 @@ await writeFile(path.join(outputDir, "assets/site-v2.js"), staticScript, "utf8")
 await writeFile(path.join(outputDir, ".htaccess"), htaccess, "utf8");
 await writeFile(path.join(outputDir, "LEIA-ME.txt"), instructions, "utf8");
 
+import { execSync } from "node:child_process";
+try { execSync("find . -type f -name \"._*\" -delete", { cwd: outputDir }); } catch (e) {}
+
 for (const requiredPath of [
   "index.html",
   "assets/site-v2.css",
