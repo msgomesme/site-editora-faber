@@ -106,7 +106,10 @@ export function SiteFooter() {
 
       {/* Barra inferior */}
       <div className="footer-links">
-        <p>Editora Faber</p>
+        <div className="footer-company-info">
+          <p>Editora Faber LTDA – CNPJ: 69.322.762/0001-00</p>
+          <p>Av. Sta. Catarina, 1224 – Sala 01 – Vila Mascote – SP – CEP: 04378-300</p>
+        </div>
         <nav aria-label="Links do rodapé">
           <Link href="/quem-somos">Quem Somos</Link>
           <Link href="/catalogo">Catálogo</Link>
