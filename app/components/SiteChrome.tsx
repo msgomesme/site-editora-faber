@@ -120,6 +120,12 @@ export function SiteFooter() {
           <Link href="/faq">FAQ</Link>
         </nav>
       </div>
+
+      <div className="footer-developer">
+        <a href="https://unio.com.br" target="_blank" rel="noopener noreferrer">
+          <img src="/unio-logo.png" alt="Desenvolvido por Unio Comunicação e Marketing" />
+        </a>
+      </div>
     </footer>
   );
 }

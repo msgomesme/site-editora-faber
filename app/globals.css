@@ -4018,3 +4018,20 @@ button,
   flex-direction: column;
   gap: 4px;
 }
+.footer-developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.footer-developer img {
+  height: 24px;
+  width: auto;
+  opacity: 0.6;
+  transition: opacity 180ms ease;
+}
+.footer-developer a:hover img {
+  opacity: 1;
+}
