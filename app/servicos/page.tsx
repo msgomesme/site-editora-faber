@@ -11,7 +11,7 @@ const editorialServices = [
   },
   {
     title: "Selo Editorial",
-    text: "Marca própria dentro da Faber para parceiros.",
+    text: "Marca própria dentro da FABER para parceiros.",
   },
   {
     title: "Impressão por Contrato",

@@ -35,7 +35,7 @@ const faq = [
   ],
   [
     "Comprar ajuda o IRA?",
-    "Sim. A Faber é um empreendimento social.",
+    "Sim. A FABER é um empreendimento social.",
   ],
   [
     "Participam de licitações?",
@@ -51,7 +51,7 @@ export default function ContatoPage() {
   return (
     <SubpageShell
       eyebrow="Contato"
-      title="Fale com a Editora Faber."
+      title="Fale com a Editora FABER."
       intro="contato@editorafaber.com.br"
     >
       <section className="contact-section" aria-labelledby="contact-title">

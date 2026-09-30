@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.editorafaber.com.br"),
-  title: "Editora Faber | Literatura que acolhe",
+  title: "Editora FABER | Literatura que acolhe",
   description:
     "Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas.",
   icons: {
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://www.editorafaber.com.br",
-    siteName: "Editora Faber",
+    siteName: "Editora FABER",
     title: "Literatura que acolhe. Histórias que transformam.",
     description:
       "Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Editora Faber | Literatura que acolhe",
+    title: "Editora FABER | Literatura que acolhe",
     description:
       "Livros que formam cidadãos, acolhem famílias, inspiram leitores e transformam escolas.",
   },

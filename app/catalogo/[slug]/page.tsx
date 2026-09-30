@@ -19,7 +19,7 @@ export default async function BookDetailPage({
       <SubpageShell
         eyebrow="Catálogo"
         title="Livro não encontrado."
-        intro="Volte ao catálogo para conhecer todas as histórias da Editora Faber."
+        intro="Volte ao catálogo para conhecer todas as histórias da Editora FABER."
       >
         <section className="book-detail book-detail-missing">
           <Link className="button button-dark" href="/catalogo">Voltar ao catálogo →</Link>

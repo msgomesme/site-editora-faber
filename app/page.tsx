@@ -26,7 +26,7 @@ const services = [
   {
     title: "Selo Editorial",
     description:
-      "Marca própria dentro da Faber para parceiros que desejam publicar com estrutura profissional.",
+      "Marca própria dentro da FABER para parceiros que desejam publicar com estrutura profissional.",
   },
 ];
 
@@ -161,8 +161,8 @@ export default function Home() {
       </div>
 
       <header className="site-header">
-        <Link className="brand-logo" href="#inicio" aria-label="Editora Faber — início">
-          <img src="/logo-faber-transparent.png" alt="Editora Faber" />
+        <Link className="brand-logo" href="#inicio" aria-label="Editora FABER — início">
+          <img src="/logo-faber-transparent.png" alt="Editora FABER" />
         </Link>
         <nav aria-label="Navegação principal">
           <Link href="#inicio">INÍCIO</Link>
@@ -188,8 +188,8 @@ export default function Home() {
             <span className="hero-line">Histórias que transformam.</span>
           </h1>
           <p className="hero-official-subtitle">
-            A Editora Faber nasce da parceria entre Roberto Araújo e Elton
-            Henrique para publicar livros que formam cidadãos, acolhem famílias,
+            A Editora FABER nasce da parceria entre Fabio Cavalcanti e Roberto Araújo
+            para publicar livros que formam cidadãos, acolhem famílias,
             inspiram leitores e transformam escolas.
           </p>
           <div className="hero-actions">
@@ -213,8 +213,8 @@ export default function Home() {
         </div>
         <div className="home-who-copy">
           <p>
-            A Editora Faber é uma editora completa, fundada pelos presidentes do
-            IRA INTEGRA TEA, Roberto Araújo e Elton Henrique. Atuamos em todos os
+            A Editora FABER é uma editora completa, fundada pelos presidentes do
+            IRA INTEGRA TEA, Fabio Cavalcanti e Roberto Araújo. Atuamos em todos os
             segmentos: ficção e não ficção, literatura infantojuvenil, obras
             paradidáticas, biografias e memórias, livros técnicos e científicos,
             autoajuda e desenvolvimento pessoal. Também oferecemos serviços
@@ -233,7 +233,7 @@ export default function Home() {
             <h2 id="catalog-title">CATÁLOGO EM DESTAQUE</h2>
           </div>
           <p>
-            Uma seleção de seis livros para conhecer o universo da Editora Faber.
+            Uma seleção de oito livros para conhecer o universo da Editora FABER.
           </p>
         </div>
 
@@ -289,7 +289,7 @@ export default function Home() {
         </div>
         <div>
           <p>
-            A Editora Faber publica biografias e memórias com todo o cuidado
+            A Editora FABER publica biografias e memórias com todo o cuidado
             editorial que a sua trajetória merece. Do original ao livro impresso.
           </p>
           <Link className="button section-button" href="/servicos#biografias">
@@ -310,7 +310,7 @@ export default function Home() {
       <section className="blog-home" id="blog" aria-labelledby="blog-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow eyebrow-dark">Conteúdo Faber</p>
+            <p className="eyebrow eyebrow-dark">Conteúdo FABER</p>
             <h2 id="blog-title">Blog</h2>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function Home() {
       </section>
 
       <section className="newsletter" aria-labelledby="news-title">
-        <p className="eyebrow eyebrow-dark">Editora Faber</p>
+        <p className="eyebrow eyebrow-dark">Editora FABER</p>
         <h2 id="news-title">Newsletter</h2>
         <form
           onSubmit={(event) => {
