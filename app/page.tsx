@@ -188,7 +188,7 @@ export default function Home() {
             <span className="hero-line">Histórias que transformam.</span>
           </h1>
           <p className="hero-official-subtitle">
-            A Editora FABER nasce da parceria entre Fabio Cavalcanti e Roberto Araújo
+            A Editora FABER nasce da parceria entre Roberto Araújo e Fabio Cavalcanti
             para publicar livros que formam cidadãos, acolhem famílias,
             inspiram leitores e transformam escolas.
           </p>
@@ -214,7 +214,7 @@ export default function Home() {
         <div className="home-who-copy">
           <p>
             A Editora FABER é uma editora completa, fundada pelos presidentes do
-            IRA INTEGRA TEA, Fabio Cavalcanti e Roberto Araújo. Atuamos em todos os
+            IRA INTEGRA TEA, Roberto Araújo e Fabio Cavalcanti. Atuamos em todos os
             segmentos: ficção e não ficção, literatura infantojuvenil, obras
             paradidáticas, biografias e memórias, livros técnicos e científicos,
             autoajuda e desenvolvimento pessoal. Também oferecemos serviços
